@@ -288,6 +288,9 @@ main.container.with-sidebar .sidebar { flex: 0 0 280px; }
   border-bottom: 1px solid rgba(0, 229, 255, 0.15);
   padding-bottom: 0.3em;
 }
+/* 隐藏 markdown-it / marked 自动生成的标题锚点符号 */
+.post-content .markdownIt-Anchor,
+.post-content .headerlink { display: none; }
 .post-content p { margin-bottom: 1em; }
 .post-content a { color: var(--primary); text-decoration: none; border-bottom: 1px dashed var(--primary); }
 .post-content a:hover { text-shadow: 0 0 8px var(--primary); }
@@ -333,11 +336,17 @@ main.container.with-sidebar .sidebar { flex: 0 0 280px; }
   padding-top: 16px;
   margin-top: 18px;
 }
-.post-nav-item { flex: 1; min-width: 0; }
+.post-nav-item {
+  flex: 1;
+  min-width: 0;
+  text-decoration: none;
+  color: var(--primary);
+  transition: text-shadow 0.25s;
+}
+.post-nav-item:hover { text-shadow: 0 0 8px var(--primary); }
 .post-nav-item.next { text-align: right; }
 .nav-label { display: block; color: var(--text-dim); font-size: 0.8rem; }
-.post-nav-item a { color: var(--primary); text-decoration: none; word-break: break-all; }
-.post-nav-item a:hover { text-shadow: 0 0 8px var(--primary); }
+.nav-title { display: block; color: var(--text); word-break: break-all; }
 
 /* ---------- 归档 / 标签 / 分类 页 ---------- */
 .page-title {
