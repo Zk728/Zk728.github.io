@@ -1,184 +1,742 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="第一章重逢于宝鸡文理学院">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2026/10/04/hello-world/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章重逢于宝鸡文理学院">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2026-10-04T14:38:34.961Z">
-<meta property="article:modified_time" content="2026-10-04T15:07:16.959Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hexo</title>
+<meta name="description" content="">
+
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+<link rel="icon" href="/img/favicon.png">
+
 
 <meta name="generator" content="Hexo 8.1.2"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+  <!-- 星空背景画布 -->
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  
+  <div class="grid-overlay" aria-hidden="true"></div>
+  
+  
+  <div class="scanline" aria-hidden="true"></div>
+  
+
+  <header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="/">
+      <span class="brand-mark">✦</span>
+      Hexo
+    </a>
+    <button class="nav-toggle" aria-label="菜单">☰</button>
+    <ul class="nav-menu">
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
+        <li><a href="/">首页</a></li>
+      
+        <li><a href="/archives/">归档</a></li>
+      
+        <li><a href="/tags/">标签</a></li>
+      
+        <li><a href="/categories/">分类</a></li>
+      
+    </ul>
+  </nav>
 </header>
 
-      <div class="outer">
-        <section id="main"><article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/10/04/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2026-10-04T14:38:34.961Z" itemprop="datePublished">2026-10-04</time>
-</a>
+
+  <main class="container with-sidebar">
+    <section class="content">
+      <article class="card post-full">
+  <h1 class="post-title"></h1>
+  <div class="post-meta">
+    <span class="meta-item">✧ <time datetime="2026-10-04">2026-10-04</time></span>
+    
+    
+    
     
   </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="重逢于宝鸡文理学院"><a href="#重逢于宝鸡文理学院" class="headerlink" title="重逢于宝鸡文理学院"></a>重逢于宝鸡文理学院</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2026/10/04/hello-world/" data-id="cuidkj_XTZZaOTYYZ9aK0p3yn" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
+
+  <div class="post-content">
+    <h1 id="第一章"><a class="markdownIt-Anchor" href="#第一章">#</a> 第一章</h1>
+<p>uuid: f37ee268-75eb-fced-f638-7c3ebf92ae55<br>
+uuid: 108d33d4-4391-225a-8c33-cc59e00ca266<br>
+uuid: fa7dec4b-52fc-776b-f746-04cd58f6831c<br>
+uuid: 1baf749a-39ab-76d2-63aa-200e504e13eb<br>
+uuid: 72bd615d-fec8-49b1-dc18-90bf34971fde<br>
+uuid: 087a9cab-cc6c-a035-173f-7651f66d53df<br>
+uuid: 0b5796ed-288e-316c-8ca4-b00af2df2c41<br>
+uuid: 1fd4c96a-c8df-a559-cf44-1a9e9ae5d748<br>
+uuid: 601c34a0-ea67-bae4-6848-49e4aea0e34d<br>
+uuid: 47eaaf7d-61b4-afe7-8bb1-54ae2e698f11<br>
+uuid: 34119e59-bfd6-9294-5b4c-5be547cb8ead<br>
+uuid: bd935bc4-fe46-33f7-80f3-2ccb73fe7a07<br>
+uuid: 8c37cba1-1686-4246-6eee-6f656d986245<br>
+uuid: 0ac265b8-6e4c-afa8-ca33-8755d936a47e<br>
+uuid: 50e83a7f-9c26-1329-9ae2-8aa39840b6b8<br>
+uuid: b783f3f8-5ea5-139e-9bad-c6430dcd53b4<br>
+uuid: fd73c120-902c-cb6b-0d2a-ff61ce94943e<br>
+uuid: 941648ed-de17-3b93-6029-249fa53a2015<br>
+uuid: e2caa214-5380-14b3-8529-a1a627468e2a<br>
+uuid: d348f191-ec31-aba0-7e71-625b9909b333<br>
+uuid: 50414e69-de43-4278-dcd4-bb0162e607be<br>
+uuid: c7359fc7-9d63-9e0b-0fe9-8bb132d34504<br>
+uuid: 4fec7e6a-46f5-33b2-b1ee-3c8da54785a3<br>
+uuid: 5c2fb7b5-cd08-83f2-0eae-0ebe793e6eb5<br>
+uuid: 4a295fc2-b9fb-7231-2488-040a67934cee<br>
+uuid: 96512c5d-aa01-2fdb-e200-201c98756a66<br>
+uuid: 364179bc-60e3-1725-3562-66d86173f223<br>
+uuid: 9c512163-3da8-f0df-d5f1-634b7a343637<br>
+uuid: 4968fc8d-2a4b-5e06-ed7b-c0e90575d65d<br>
+uuid: 8565fc32-624b-3251-a197-3a4d9c6bb2e1<br>
+uuid: 2382768a-517b-33dd-49d2-ddfa305cb50a<br>
+uuid: ea3049b6-e8e8-7d74-f8ba-f273e1cfb9da<br>
+uuid: 66834e41-607f-6945-399c-7d99215a620c<br>
+uuid: 219fbe55-4360-ac3f-4855-691c4ec31d3c<br>
+uuid: 895b0647-ea9c-a93c-8048-84a0a82ca4f8<br>
+uuid: 619d92d6-522f-a04f-f57e-edad40500230<br>
+uuid: 754a6d34-7d67-aa41-fe4f-a58937d4715c<br>
+uuid: bfccc24f-eb77-e233-ca01-1260a5e7cdc9<br>
+uuid: 75a4597d-c49c-daad-8e58-330a112c82fc<br>
+uuid: 9d75ee55-cc09-3872-11c7-74182d9fa4da<br>
+uuid: 674a1d4e-95a5-abd6-2b4c-32ee9413870d<br>
+uuid: a9b2e553-4913-596a-bf96-c2a826515efa<br>
+uuid: b19e5ca2-7aac-087c-374f-cb8d32ae62c8<br>
+uuid: 7af1f468-3132-f9b0-383f-a0b7b8e2335f<br>
+uuid: 64d02bec-a27e-c0b3-1975-80c0533704da<br>
+uuid: 93ebeeb8-897c-0278-20c5-e15394385d27<br>
+uuid: 3abf9295-3733-8c89-0e42-085aafb92c9f<br>
+uuid: 5d438ed1-8f07-4806-5a23-28db3af82fb6<br>
+uuid: 5b9882dc-72f8-7f44-1eee-69b88c088748<br>
+uuid: ceb743dd-8c30-219b-994d-5f6cbeabab34<br>
+uuid: 47027350-63d7-048a-6046-7900a577e5c2<br>
+uuid: 3898c541-f03c-5f12-8f35-38e9ffd9df6c<br>
+uuid: b077a37b-ee47-32bd-8cfe-5d1297b11ca1<br>
+uuid: 8123edbf-97e1-ba00-83b7-0cfa55b31e6c<br>
+uuid: 7c5ff42a-f1a6-8b6b-dc58-2ccdbc9af7ab<br>
+uuid: 465b333b-a1d3-8627-d24e-a83fcabeab58<br>
+uuid: 7c41da55-d20a-d782-5444-cdc74c37baff<br>
+uuid: 482d6992-50c2-04b3-e787-0e11512ed332<br>
+uuid: a2c45b82-3e17-32ed-6d8a-a185d6a909b1<br>
+uuid: c4624fc5-bcd7-8b1e-4062-ba5dd863ccdf<br>
+uuid: 7f8402bb-0371-4969-279a-351665a4aab8<br>
+uuid: f5936f95-8295-f5c8-8149-cf44636ba475<br>
+uuid: 5e5bf8f8-6e1f-8395-a232-dd9c7ee8716d<br>
+uuid: 62ac5f1e-f391-a2e6-3d4b-b8bfad82e19b<br>
+uuid: 91fc14cb-7e49-7ece-0c26-ddc6440c85b3<br>
+uuid: 42b0963e-54fe-d664-3a65-9b0a97f4dc5b<br>
+uuid: c19d5de8-eb92-c1ed-3b10-5a32f8cc1c80<br>
+uuid: 0b4ab71c-6454-6b7d-8ac0-0d5eb404afcb<br>
+uuid: 7315bc98-5482-6304-1cf1-d04179ed2314<br>
+uuid: c976d6db-cf9c-111d-ae81-c299ce399269<br>
+uuid: 7877d793-422c-d9a5-98e4-38879d21b4c2<br>
+uuid: 0e7b805b-66ed-c103-69ea-632d01b7a797<br>
+uuid: b8ffc431-f09b-eb5e-1dec-4f01da7071ea<br>
+uuid: 3ef3fe17-563a-53e1-867e-828084bf103f<br>
+uuid: 459c6c27-477b-d764-cac1-3222489ac199<br>
+uuid: 078477b1-7e9f-f8c5-c5f7-2031abf77b95<br>
+uuid: 21308a6f-da2b-95f5-55f4-62215b4a707b<br>
+uuid: 0981663f-985e-fa56-4829-a78310aa5308<br>
+uuid: ed199335-4f6b-c070-45de-53c92aa83655<br>
+uuid: 56184b12-9f0d-425e-949f-abbe7c069d12<br>
+uuid: 0a3303ad-c27d-bda1-57e0-deccd10a605d<br>
+uuid: 653691d2-e75e-69fc-f554-c7dac802a2c3<br>
+uuid: f8d8c282-b2e8-88a8-aef5-e8e9bec35afc<br>
+uuid: a63cfdf2-0290-f2b9-ba90-d7b4465f63fd<br>
+uuid: 52537d10-4ccf-5dbc-2036-32dad3cd0ba8<br>
+uuid: fcf84586-ead3-f191-06fb-cc9a13bbcf48<br>
+uuid: 318d84ab-366b-c6db-57f4-ae27b985f34d<br>
+uuid: 4d67f083-02a2-8490-0049-4d2b384c33b3<br>
+uuid: 3f63181f-6e51-13db-2bff-a6dbc2a4b2e5<br>
+uuid: a644c2c7-f7fa-c267-dafe-e66c9acc8c6c<br>
+uuid: c838524e-a61d-c43e-3f0b-a8c717992939<br>
+uuid: c550fb13-e3a5-823a-3a74-87402f0eb6ba<br>
+uuid: c10baa9b-f51b-dfc1-4bb8-78740b2a0eae<br>
+uuid: 08aa231f-1fba-2e2c-41e2-076d288c2435<br>
+uuid: 5623f727-4ab5-5a70-5976-f6f89eb39bfb<br>
+uuid: e90602d8-c55f-2af2-abcb-11d082625f46<br>
+uuid: 9d9ab21a-b8ae-6e83-eefc-af4e3f7bf173<br>
+uuid: 9df0bc42-ccb7-1560-e1cf-fa557f34277a<br>
+uuid: 986790d0-8b75-9bc3-b272-1e81cd9eb0f6<br>
+uuid: 6707ac8e-2d77-e95f-2237-9501f5a7b4fc<br>
+uuid: 84ebb1c6-67ce-e32d-8099-9517e4f82a88<br>
+uuid: d4936d61-256a-ca37-efe3-713d44d2bd74<br>
+uuid: bb2e706d-834b-e612-a161-4f1a492be056<br>
+uuid: 600e807c-3bb9-4cbf-7916-9d7cbd39c6f9<br>
+uuid: ff1b9589-8052-b4f1-99ca-e940df666559<br>
+uuid: 98c00ed1-995f-8132-83b2-62e9fc48bc5d<br>
+uuid: a2d5a097-0c92-6ee1-8e6c-a19c2f901b55<br>
+uuid: 599a91a9-5bdc-0a14-df43-f705a4bce64d<br>
+uuid: 9a9dd7f9-2b7b-0f88-6117-78433c1509a1<br>
+uuid: bedc92b1-f39c-7fef-751c-cfcc0591b6c6<br>
+uuid: 429e8294-eca9-789f-4da3-7679f38faae5<br>
+uuid: e999293b-b6ce-6440-4edc-64ec01e07665<br>
+uuid: b1da1ffb-768d-4140-c8be-79e38ce7e959<br>
+uuid: 4147ed98-6b55-285c-7924-0f0cf55b3fdc<br>
+uuid: afcb761c-9d3d-018d-7b30-d9ed91d2996d<br>
+uuid: 1ba5c3b1-86e3-6192-26bf-9b9f71fd1690<br>
+uuid: b5573c5d-7709-b80b-c088-d7b8d312af35<br>
+uuid: 0547af1d-c13d-b486-4841-e10fab9ca11a<br>
+uuid: 36012a9e-db0d-0994-b0cc-16ab4a048c3c<br>
+uuid: cee8c765-df56-7148-1e9c-6630636d02a1<br>
+uuid: ca5ab1fe-a31b-4ee4-98b5-d1f4b9989f39<br>
+uuid: 47bd3c56-4ec3-51ae-5701-d7acfcaaf0e5<br>
+uuid: 47121d7d-1508-0950-3594-525dea1386a0<br>
+uuid: bc4e03f3-037b-6535-3fa3-31d857c49cf0<br>
+uuid: 83f90b4c-3038-881f-3727-502bf02081cf<br>
+uuid: f2501b51-0aae-d531-890d-945b4440c23d<br>
+uuid: 5d43d824-9d63-2d2d-3d09-3044e6379652<br>
+uuid: 6c8bbcb6-582c-aff4-e05d-3b2c460d2edb<br>
+uuid: 15f44197-a3bd-3522-ef94-889d7cc5fb40<br>
+uuid: dbe9f54c-7630-24e8-43cd-b8d8cb694ffb<br>
+uuid: 45277009-705a-72b0-d3a8-725a238f1d82<br>
+uuid: 1592e305-be64-8436-12c4-7fc3ca26aa65<br>
+uuid: a87e9d3a-760a-41f6-449e-6a9ea38c1ccf<br>
+uuid: 7bd6016c-3756-cd0f-d1a7-cb7e8e509036<br>
+uuid: a603cdf9-5407-bdc0-a9c1-ddd45b725a82<br>
+uuid: f2050923-bd71-9e66-f928-1241167cbe33<br>
+uuid: 0d26bc60-e247-94c7-eaaf-d03e60d9cd72<br>
+uuid: 64a98f6a-ba4d-43c7-eb95-57f38b65459f<br>
+uuid: fd452302-55dd-b854-1959-d9fc8a845a77<br>
+uuid: 0a6fcb7f-32dc-0dbc-683a-0da2a0fc5aec<br>
+uuid: ddac4ea2-fe46-0519-1bc5-67b658ca3c2c<br>
+uuid: 9f44ddc8-ed89-ef25-12c8-38372121cea8<br>
+uuid: c201b758-7511-c2e9-b099-1b1460e7614e<br>
+uuid: 393e76b0-2b62-11e6-7ffc-a2c82aa6f62d<br>
+uuid: 4f6ca7fb-9b47-3295-090c-94e0a2dbb611<br>
+uuid: 12c2166f-cc92-c5e6-6b50-afbe5db1dc88<br>
+uuid: 2dba4188-026b-58e6-0cc3-f37f57cd0bf1<br>
+uuid: 29d1181a-2f47-14f9-9785-768fcbde4df0<br>
+uuid: ae89ad4c-0369-e315-2431-11d641bb16ac<br>
+uuid: 141d7a6d-cfac-af67-c694-0117aa2d105e<br>
+uuid: fda8f7fa-deaf-c681-dc3c-018c671680c2<br>
+uuid: 377086e2-e3fd-6b93-430b-5fd5b4ccaac3<br>
+uuid: 9bb0f1df-3411-2378-1c9d-59426aeb3577<br>
+uuid: 18ef2a68-08c7-b864-9e60-3b11908294f6<br>
+uuid: d3f480a1-dacf-f22a-e2e6-2712bb17283e<br>
+uuid: 1b3e0c55-626f-4b12-3570-0d958acc9ab7<br>
+uuid: efae5d29-ca17-2893-e168-10ef160c6be9<br>
+uuid: 82fb2de3-1462-3f7b-2ded-80875d640d9c<br>
+uuid: 8267526f-3713-7b38-e402-8251e6c5520d<br>
+uuid: 9002d873-7973-bd31-4c47-0dad9fe8b1a9<br>
+uuid: 6f4b2842-1fd8-d646-6931-b3564f326325<br>
+uuid: 3cb70fc9-99d1-da5d-1644-edf9dddf531d<br>
+uuid: 05338924-4268-3aa5-eb6d-7053a9321a83<br>
+uuid: e486391d-d1a8-4c80-06a8-32bc77fe84b4<br>
+uuid: 280ea477-1b6e-3fec-655e-4045829cb386<br>
+uuid: 1008092e-57ee-88ef-61da-b00eda6d92af<br>
+uuid: 6c83ddee-1408-7dd2-0eba-6422047917ac<br>
+uuid: b91cff36-11e5-04e1-75b9-083dee9943a9<br>
+uuid: 52c5575d-6d3f-c6c7-2af2-8c47b8183f85<br>
+uuid: d006a987-b3ed-bb8e-b490-e7701723512b<br>
+uuid: 63401aa6-e984-c3ba-02b3-12b9d2353116<br>
+uuid: bbf3ee23-4ee3-8972-6d2e-1e80db5dd0a7<br>
+uuid: 5d45e94e-4442-825e-e59f-97d1732fcae0<br>
+uuid: a9c5aa13-5ed7-6c51-d83d-9ebbada87a21<br>
+uuid: 7cf6ba96-113c-9d18-dcd1-032dc0dccf6b<br>
+uuid: a41ec5d5-e76f-13fd-d5ce-430dba248393<br>
+uuid: 5fe4a338-ccf1-a3ac-0c3c-155355a82c4f<br>
+uuid: b61ff79c-d3d6-114e-3f95-85f20d856cc4<br>
+uuid: 8cdbdaa6-5a69-0082-3e39-0c52a5c2f18b<br>
+uuid: 3f9e8e9b-6eb0-c1b8-8405-8463333fe539<br>
+uuid: f7dfffc4-b11e-8515-ffb2-d58d2215cb81<br>
+uuid: 1e9fb3d6-d581-7138-7cbd-b0b5ddd06e91<br>
+uuid: ad8e00f1-13a8-2d9d-29c1-4e740aaf99c0<br>
+uuid: 3c711d7e-01ec-0d61-8830-df98e7ff163c<br>
+uuid: 21280a77-b616-117e-9edd-68615dff36dc<br>
+uuid: bfd2b896-564b-2607-5eb3-02ea65db2355<br>
+uuid: 0b11898d-8272-a61c-1bcf-d80d700b01cf<br>
+uuid: 0ffa9daf-c540-9b7d-6623-cf9a417b2e37<br>
+uuid: cc2489d7-a0a9-b291-ab10-90671f209334<br>
+uuid: f5e280cc-8829-470c-2757-eb7112725d33<br>
+uuid: f3ea3132-61c9-a417-5afe-fd9560ecf6ce<br>
+uuid: 2492df20-50f5-b456-15a0-b460f045fddc<br>
+uuid: 9149cacd-d569-0585-4ff5-4f5c34ed7366<br>
+uuid: 9aac0e5f-8502-73b0-6e23-56683b31bb0a<br>
+uuid: b340a72c-ce4b-2589-dfee-bb7bc9026b1f<br>
+uuid: cc484d77-c0be-045c-d5e9-f6db433c30ab<br>
+uuid: 516d2780-f435-9360-d61a-92b628cb3f6c<br>
+uuid: 3d3987e5-49dc-500c-5512-b1f79b489bdd<br>
+uuid: 19811fc5-6d88-7d4d-876d-ee41e59267cd<br>
+uuid: 2ea54e9b-f364-f97f-8d35-8ceff6166017<br>
+uuid: 8a472565-eabb-1b53-ce45-dc243420fe64<br>
+uuid: 8adf6d70-8977-4b58-0a69-4f9ca532007e<br>
+uuid: bd7b1c00-dbe8-957a-4108-3bf36b4cecfb<br>
+uuid: 4598e9a4-e14c-a6b7-5fe4-91ac1883d2fd<br>
+uuid: 66a4da3c-edc5-32e9-7444-beb772798039<br>
+uuid: 230ca84a-b1b2-7a7b-20db-7bb0144dfe7a<br>
+uuid: d2650802-4f84-5716-bbfb-7bf3452156a1<br>
+uuid: ef92865a-3892-adcd-53db-366ba9529dde<br>
+uuid: 9157d922-a9f5-90e8-d3d9-d0ed064ce73d<br>
+uuid: 440b2497-d1c3-16be-b414-a3e91e743928<br>
+uuid: e306b9ab-f3ac-89ff-9911-ce7f4ee7c9a0<br>
+uuid: bb49da9f-377d-f4bf-d8e1-25155fe42729<br>
+uuid: ecc08400-4ed0-e504-0267-68ed0f5d1e8e<br>
+uuid: 50ffd8d4-38a6-fedf-5b68-d9db4c7da832<br>
+uuid: 21561147-5e8f-332a-dc54-efe8b81eab16<br>
+uuid: 080aedc7-f296-2b4c-179a-a2761ed2a9df<br>
+uuid: 4efb935c-8eaa-4d43-b325-8b7c10ba1af8<br>
+uuid: 6d057ad6-a7b3-8f32-d99c-2b4b7ceec62f<br>
+uuid: fc5ee0d1-17a1-b7b4-95cf-fd2b5479782d<br>
+uuid: 0ce593a6-ad9f-bc83-298d-3600b6ce5a79<br>
+uuid: 1e4449dc-3dc2-387f-7ed3-b3bc721b3971<br>
+uuid: 43764d54-9280-74d5-3d53-fa14484bd8c8<br>
+uuid: 263a5b39-3ab2-f7ec-95d3-8e3d3e328490<br>
+uuid: dcd05498-0256-888f-2c97-fd0338d236fd<br>
+uuid: 2b497d1e-1e1d-7f12-70a9-43866e420730<br>
+uuid: 827a8b2a-ccac-4c12-6b23-441142166911<br>
+uuid: 6c95a7fc-44ca-c7f3-965c-c7ab245ac8fc<br>
+uuid: 96c39c59-c558-e8e8-577c-8148c7fa336e<br>
+uuid: 71890f8a-1c1b-d9e8-bfbe-1eed1b16bcb9<br>
+uuid: aef88a6d-3edb-bbc0-245e-47f769c05fbd<br>
+uuid: 928ad0e3-7a7a-06e2-b319-0488b144c8ad<br>
+uuid: 1a6897f3-1fc2-1746-22ad-c743aa4b1a1c<br>
+uuid: f91c4f32-438b-4e0d-a4f9-2a067a988af0<br>
+uuid: 721807f1-c557-ba41-d264-da5e4227b955<br>
+uuid: 42c336b9-0e21-6724-78a3-6c92c4953463<br>
+uuid: e8798680-d7f7-28d9-bba8-322060424dfc<br>
+uuid: c1b17d0b-c928-1ab2-3c63-d514010b7309<br>
+uuid: 8384d2e6-4828-1151-55ba-5a30365c5dcb<br>
+uuid: 0ed30858-cdd6-cd03-ea4d-add7e07f6a46<br>
+uuid: 66e561e0-f972-54a2-8ebd-e6218cc3db71<br>
+uuid: 421a1cd1-ed37-3dd5-f131-ef7ac961be96<br>
+uuid: a2728c5b-625a-8094-0f1e-bc37a4a2d94e<br>
+uuid: cb47283a-443d-fe52-f1f2-aa1082506c4b<br>
+uuid: 1e9e67d2-cb2b-d95e-9895-172059a53e4b<br>
+uuid: 228bcfb0-7a8f-7550-0c48-d1b15b76c072<br>
+uuid: 6033e574-e109-db3b-fe3c-0055c439ab20<br>
+uuid: 61880fce-cfe5-328e-4fde-52cdcf92e150<br>
+uuid: 4cb82d8c-5d88-b10f-95a0-a48e7290aa87<br>
+uuid: 94ba4a2b-8da1-a635-64bc-e8458c747f2c<br>
+uuid: b6d377a6-1bfd-9c11-cd9f-220e555f228b<br>
+uuid: 2c69499d-825f-ff7c-f0d0-9cdc4ddbc050<br>
+uuid: a6a5f6e7-dea1-fecf-6fd8-85a6433de796<br>
+uuid: 26b4ec7b-d71b-248e-9365-7fe3ebf55832<br>
+uuid: 69b7ca86-3cb7-3bce-2c53-47e9e001f6bd<br>
+uuid: 7f9a7ea3-7488-3481-b838-65e27df829e0<br>
+uuid: 2614c304-8133-1c0c-e8b8-6d93c8136ee0<br>
+uuid: 52de7444-4ac2-e95b-f1bc-6c16207c8052<br>
+uuid: 347a1a8d-5b1f-7b84-80bd-0e91ab25dfe2<br>
+uuid: bb4d0562-d38d-6037-a949-73bb766e1bf3<br>
+uuid: 40fad7c9-6814-6569-e281-3306c397ff7d<br>
+uuid: cb2ef4ad-1031-07b7-cee9-3e368fafed0b<br>
+uuid: e182488c-286d-953f-a11e-e0bc7e35b678<br>
+uuid: 6987f86e-dd02-dac1-f6c2-873b68875d00<br>
+uuid: 0b46b7ab-4eca-b395-e274-35d0986481e8<br>
+uuid: 6f3cec48-bf92-817e-e947-a5d251c73145<br>
+uuid: c3440b13-edc0-850f-9cc4-0c462f662c6a<br>
+uuid: d42f4986-181b-b2e3-3a53-74c7eb9a093d<br>
+uuid: 421c7ca0-e659-ed2d-72a5-63ea353324f0<br>
+uuid: 502546c3-c082-a7c2-1b20-8d33eca44e49<br>
+uuid: d5a502ab-8290-dba5-5a79-bdc39e55f9eb<br>
+uuid: 11a95350-1a52-a7b4-9c8c-0381ea69cc11<br>
+uuid: e474f505-db0f-5f42-2f09-fb8745107ed4<br>
+uuid: 87c08f40-4efd-7522-6a41-fe42cc94c86a<br>
+uuid: 5bab416b-27c3-ced1-698d-4e649ba170b4<br>
+uuid: 0911dbbb-50f6-d48d-5ef4-085e263eff81<br>
+uuid: 3b262ee0-73e4-3a7b-da4b-2df6bdd03919<br>
+uuid: 7e859dff-e646-d38a-028f-2b05016ee3a7<br>
+uuid: 8f416d1a-5271-6a60-4043-4acc4940fa12<br>
+uuid: c105b5f7-0d01-28f0-51c4-d8b0e6134bf1<br>
+uuid: 656d9ee4-0bf3-9d42-0a1e-3355b91f0a28<br>
+uuid: e4be1729-4b1c-5522-953c-ad697eafe6df<br>
+uuid: a7e04893-311f-4129-9d17-9914273e7b7a<br>
+uuid: 31fdd57b-e9d8-0e64-cedb-b6ca4db79085<br>
+uuid: 1ee2e3b0-bf02-b3da-4e72-28a04ec3b7de<br>
+uuid: cf34a40f-d32e-3dee-8d90-11fb973bbce0<br>
+uuid: 6c90ace2-388c-0483-3f3c-956218f7c883<br>
+uuid: 9590ac41-0aa7-a19b-ad6e-84903424d5ed<br>
+uuid: 58af739d-aa51-a6f6-196c-4f47225a4b1c<br>
+uuid: f7d30877-8e50-964d-2763-6628603ca870<br>
+uuid: bc001304-6c24-47e6-346e-b73f3496a74f<br>
+uuid: 80ded2f7-4c26-4682-877b-d9f3a18d1d30<br>
+uuid: a194ff69-1265-1c86-20f8-4bebae959d4e<br>
+uuid: 34a66b01-339f-5bc6-8e5f-ff294819faba<br>
+uuid: f4c682eb-0a7d-cbfc-8383-633d68723e1d<br>
+uuid: b0a500d0-c629-65df-2a68-51155817dd72<br>
+uuid: 61bbbaae-99a2-aa32-67c6-308c078d69e4<br>
+uuid: 93d6dedc-6e9d-c2ab-18d9-849a1a015dec<br>
+uuid: 3b87d53c-2a09-e7e1-8fa3-4cbeb63b8054<br>
+uuid: ebf5af04-e840-0b5c-f4da-3dade690e6af<br>
+uuid: 95b04c76-d033-f9b5-7664-0ca44b1186b8<br>
+uuid: 25517394-2bf1-7b81-f5e5-5ab2bae1be4e<br>
+uuid: f6fa36c3-d1c1-3c64-033f-d2ae45b4c98f<br>
+uuid: 2deab6e0-7e86-a5ec-c04d-d49384de13cf<br>
+uuid: 210f4905-f3c4-71ca-aead-449cc245f432<br>
+uuid: 6f3dfc0d-8448-72f5-4095-ea6aea733648<br>
+uuid: 0b2a5a45-112d-29ca-70d7-69080dcfc062<br>
+uuid: 2ac0f19f-c9a7-4aa8-6615-1ddb2c2d1ae4<br>
+uuid: c9e5564a-259a-e235-98fb-da96c51a65d9<br>
+uuid: 26d0a344-7137-4d8a-5bc7-42a66dc44c2b<br>
+uuid: cb54f927-6d07-35c4-415d-4b322f042672<br>
+uuid: b43ddcb7-e47a-10b6-af5f-b46523c2b86b<br>
+uuid: a0c94480-2a2e-9219-c8b1-be7c65c02386<br>
+uuid: cda7a3ff-56a4-50cb-2369-284aa95c1b0c<br>
+uuid: 63a8bbbc-6805-e83f-60f3-a7838e6dec6f<br>
+uuid: 47ed86b6-f5aa-bb08-c9d5-a08f19c3cfcc<br>
+uuid: 3a13c317-cde3-1d38-de6d-af22a56148f0<br>
+uuid: bc08c4e8-29d1-2867-c517-15c6178ca4b2<br>
+uuid: f5dc5a0b-d0ab-b6ed-8dfa-e2e686fde526<br>
+uuid: dfe28e87-55ef-5027-4a30-94132d5d96b9<br>
+uuid: 0c53d162-4430-af88-3219-5f8cabb43827<br>
+uuid: 477647ea-b3f9-9282-7be1-f0c0bf38017b<br>
+uuid: da82fc0a-3f1a-68fa-4d65-965c1bdd7df4<br>
+uuid: 4875747b-acb3-57fe-c25f-a99694308713<br>
+uuid: 94e364db-b1d3-ed14-5f61-7bc4e6f61db1<br>
+uuid: 71e10666-c4ff-b996-7596-cb9f8b75a7fe<br>
+uuid: fc7bd7ac-8e49-bca2-63ba-68ba55d801b4<br>
+uuid: 7cfde8b5-4197-890e-8c76-7eb2924e8c32<br>
+uuid: 8a38f40a-dff5-ff11-ede3-8e757942c75e<br>
+uuid: a7c85819-0b20-607f-596b-c6cfe2ebbe11<br>
+uuid: 857c93cb-51eb-9fd0-dad4-028bcc617838<br>
+uuid: 64caad44-9248-a8bd-dabc-c3dfe8263ca6<br>
+uuid: 6458f42d-5c35-85b8-8430-d59284d884d4<br>
+uuid: 4dd2d728-9d01-1f90-e6b8-fe56ec668268<br>
+uuid: a6d24612-e789-9eb2-8021-c1dd1260da8d<br>
+uuid: 8f285557-2225-bd97-fce2-5c3b09d67c65<br>
+uuid: 6cfc4d1e-3f9a-6d58-53aa-cea78e453133<br>
+uuid: 68d5a928-c887-9f29-085b-23610efb5489<br>
+uuid: abe9d124-aeff-04a9-3201-6ea96ff42cae<br>
+uuid: a54338ec-8ca4-672b-23a9-8ce0448f49bb<br>
+uuid: 5a91fe65-6e96-a44b-5fda-2f9d698c1c45<br>
+uuid: 2d706934-aef6-b061-cfb5-66fcf67e21e0<br>
+uuid: 246fcef7-c0fe-d5c1-488a-fa90de09d9a2<br>
+uuid: 160d219b-2fbd-0cff-f8a3-0d5e635609f4<br>
+uuid: 3dd30133-59d7-cfea-5ded-dc26f3120c51<br>
+uuid: 26266367-4550-45f9-4462-6b796856f908<br>
+uuid: 2aee2646-0d70-9b1d-edec-187e2ac81f56<br>
+uuid: 143aea56-3505-564a-f9e2-812a1f04ac2c<br>
+uuid: 15bfed16-b169-dfde-194d-5784b3f48456<br>
+uuid: 7a720ad5-de12-7df0-ebf0-d87c3d13b4c6<br>
+uuid: b8432add-78d3-526e-7bd8-aec67aaa6435<br>
+uuid: 5ec0edc1-6c77-819f-37e6-15ca047f20e9<br>
+uuid: 296915c4-77ce-997f-16b3-f598acfe1b52<br>
+uuid: 74438ebc-ca21-8f2d-eec6-3f45af344b5a<br>
+uuid: 64abed43-a3f6-dd9b-2a33-ed1fba1b839a<br>
+uuid: 0f293ab8-0e58-9c58-d99e-4e6a71eed9d0<br>
+uuid: 8ed2b7f8-debb-08cb-e961-f5a1494abd65<br>
+uuid: 62965b02-9df7-5656-5c4d-872574ad6c79<br>
+uuid: 1736ed44-dbdb-29b9-fac5-b21005ffffb3<br>
+uuid: 8ba4fe24-ae74-bdcc-297d-e7f6800cd8d7<br>
+uuid: 73816d22-1e85-36ed-cf23-7aecf153f25c<br>
+uuid: 00e90d68-aaea-d923-35eb-71b702dde2f1<br>
+uuid: cf447d91-7615-ff9b-8613-f26e796b677f<br>
+uuid: 5c3ec635-9859-7840-d9a4-d10b2db4712c<br>
+uuid: 99e91f59-4ac2-8c77-8a23-0ec79602ee9a<br>
+uuid: 22e0a2eb-6781-6e5d-9eed-18f0c9abea50<br>
+uuid: 4c3e8ba8-33de-f0c9-5a52-66055d7bb80e<br>
+uuid: d0899712-1dbc-51fd-ce3e-a4ce75158afc<br>
+uuid: 45d25d0d-5c53-1213-ecbe-6d0df3f38253<br>
+uuid: 8d06f5ed-a8b5-1438-2195-b6ccfcb4abd9<br>
+uuid: e704802c-e2d9-3f2c-cd4e-8d22d5510af3<br>
+uuid: b4c39615-d2dd-0e84-e6ab-2185ffe3c060<br>
+uuid: d2342554-5c8d-aa70-4b2c-33beda5c5c52<br>
+uuid: 281a4f0a-767f-2056-6f13-3367cc1aa7b0<br>
+uuid: c6e11744-9de6-96de-268a-e6027a3ca43c<br>
+uuid: 97d6e07d-2267-ff85-3a9b-14fbf73ac4ce<br>
+uuid: d72ca8cf-a2a0-3217-31bc-abd6bef721c3<br>
+uuid: cdf2fd5f-d811-7dd8-3f59-faf8dedad84f<br>
+uuid: 7f7ca511-e53a-2dcf-73bc-533a16bc3a6f<br>
+uuid: 4d74108e-4dee-b4bb-fce2-b13258ebb845<br>
+uuid: afbc7a66-d6ff-7fe8-46e2-9f6152c183c1<br>
+uuid: 76e285ed-4fca-0100-5ecb-d13691f3d77a<br>
+uuid: c579ae95-0f10-e04b-5c00-5ae8ab151341<br>
+uuid: f8a49eae-67aa-4fe1-b095-5c43bd6b95eb<br>
+uuid: 4c8a1f9e-1aa5-6d38-0dec-d3bed9525753<br>
+uuid: 5f827ecd-a497-4abb-4dc3-75004f0ae031<br>
+uuid: ae9e12e1-fedf-b7c4-8026-de820ff7c232<br>
+uuid: 8bf120c3-a402-e13a-bc58-3b284ddc693d<br>
+uuid: b1ba431f-d81c-3e87-1b10-a19df45a6aa3<br>
+uuid: d52da3e4-a808-e27d-d86f-186ab183fe6b<br>
+uuid: 525509e3-2f5f-404e-2571-1368e887f5e4<br>
+uuid: 29f50807-2555-c40f-998a-41bec2619298<br>
+uuid: 4471b45f-c048-7cd3-5c47-34c195846130<br>
+uuid: d8e329cf-9a09-b064-f841-c66c8dfa4198<br>
+uuid: ecddadc2-ec7b-b13d-a63c-507db90c4ffa<br>
+uuid: 0a40ed3a-a291-e4af-c175-43abe11d56d9<br>
+uuid: 7d51406a-4f95-1393-270b-6bc9d16281fd<br>
+uuid: 83d8b1f2-d3f0-8a43-15cd-ac362e9a0b95<br>
+uuid: f90ef6bd-0411-53bc-a0cc-c8954842e4e7<br>
+uuid: a5e45a37-c3ac-962a-dd23-59f5fee2bb8b<br>
+uuid: f74d9273-733a-0d80-8fd1-a21b36c898a4<br>
+uuid: 1b741bb5-9133-1f96-e818-9fe676144956<br>
+uuid: 35260e4d-b35e-7f83-5cf7-2e45d96b9e04<br>
+uuid: 533adfcf-5727-f39a-66a8-830b1970d321<br>
+uuid: 7ae7dc5f-475a-0026-aa1f-c0d696f305fa<br>
+uuid: dc64f74e-3d1e-46d5-3b08-5033ce48bf25<br>
+uuid: 99254fdc-9ee7-694b-1fb4-4312e560039d<br>
+uuid: 8b6350bb-c807-0536-af7d-eeb12f9291b2<br>
+uuid: feb3b7a7-fc4b-89a3-5a15-6af8ee982bfa<br>
+uuid: d2fce0f4-8486-9955-5c64-2c92a9e5caa2<br>
+uuid: 8074750b-4f24-08f4-7f73-295ccc27dc49<br>
+uuid: 3ebc9f2a-0390-4622-465c-7942375d1632<br>
+uuid: 6fdc6c7b-a02a-9ef1-010e-0ed205dd7562<br>
+uuid: f93fd36b-6893-1549-a9c5-6054af59ba98<br>
+uuid: 26223433-664f-0556-6b03-3dfad61ede8c<br>
+uuid: 18cd177e-eace-0089-968c-a0273f5e5e3c<br>
+uuid: f8e42289-5aaf-3842-e703-7fca5667c5fb<br>
+uuid: 403e898d-7994-19c7-b54d-1c1cbe9fbd22<br>
+uuid: c6152079-44df-c0d1-0233-dc4a47fa51e0<br>
+uuid: 21f44ec6-f73e-95af-8f36-e865a3220ee1<br>
+uuid: 9eb489c7-6a8e-0424-9024-111959103df8<br>
+uuid: 7e9636be-ecd9-ae5a-f35f-9c70063c78f7<br>
+uuid: c6acc19b-aadd-8aed-2073-bd53f2cc9380<br>
+uuid: 8cc1a7b5-e18a-fc5f-f574-5c66c2b51275<br>
+uuid: 7aa0d87b-70f5-16f8-a2d6-212780fad6fc<br>
+uuid: b222f07c-3b92-731c-cd4a-654276abb9a9<br>
+uuid: 7868248e-b887-03f2-ff3b-fb65f2374eeb<br>
+uuid: d30bf70c-b928-cb96-7671-692a1a5980a9<br>
+uuid: 31744bfe-36eb-f67d-b158-429ab792e411<br>
+uuid: b05cd706-2a0a-8a9c-251c-4005f3c0c6b4<br>
+uuid: a9f8fa6b-ad5f-eb5a-efba-5547972f1bdd<br>
+uuid: 9aa2c1f7-aedb-d1de-ee60-38d0ff808a69<br>
+uuid: d92e890e-8d52-a97a-cda3-ed0930971c55<br>
+uuid: 8e6f390b-4640-d6b2-58bc-53bee842ecab<br>
+uuid: 9c8c0050-6ae6-1705-896c-5809e3680082<br>
+uuid: 7acd42b6-6be5-0bb4-0235-ffd1c75d3bb9<br>
+uuid: 71f3c0bc-4ef7-3c74-bbb5-d4579314ab8e<br>
+uuid: e903371f-b6b7-e7de-6000-4e4c6925740a<br>
+uuid: 346dc449-2946-3fd9-4b1f-25a5c10c9299<br>
+uuid: 0163b39e-ddea-3b7f-e1e5-af0fd960ebf6<br>
+uuid: 9848f9fa-cfb5-3547-e2c7-5625ff7ff8a8<br>
+uuid: 117b46e6-6135-dc03-7b39-d332771abba1<br>
+uuid: 94e0920c-dba2-8364-58a2-99ef8c64c0e1<br>
+uuid: e1738dea-c897-7650-db0d-e0939080c645<br>
+uuid: 40452576-4f20-5965-8c18-7ba6b7e02baf<br>
+uuid: 1ae56e53-127d-2368-52fc-415bcda9055c<br>
+uuid: 6a9746dc-7de0-7cc4-ef62-47a570f50ebb<br>
+uuid: d2f825b8-f0a0-582b-82cf-da4c740c2a9c<br>
+uuid: 9d8e0322-f60b-756a-8b9b-5beb81fc4b5b<br>
+uuid: a88077e2-f457-bb70-520a-60bdd82618b6<br>
+uuid: 46f57a6b-5953-651e-1295-91c7e2281ee6<br>
+uuid: bae70b0a-8bd3-dc56-9d89-3d2e459474e5<br>
+uuid: 3baba1ae-0b9a-1e9b-0323-a30fd12d9eb7<br>
+uuid: 334e3b34-1996-d8c6-f96b-279edabbe17c<br>
+uuid: 2945bfae-b742-937c-f3cb-457ab3e129e6<br>
+uuid: 62532397-c8a5-85b1-b00e-5f72cd67624b<br>
+uuid: f0584be0-fb30-feb6-ecaf-02d2aa9bdea1<br>
+uuid: 5e4cf2e4-e5e2-ed42-6b53-396d14089e28<br>
+uuid: c1c4de89-8db7-dc19-cf42-2085b22c833f<br>
+uuid: 365b478b-c062-e3de-2d13-f52aa960e93f<br>
+uuid: eadec013-e123-b44b-b116-9bd52f243ea7<br>
+uuid: 3ab3d062-bad1-f6db-6d83-662e19943d2b<br>
+uuid: fcc6562f-f7e1-d9cf-5855-466e327f6f0f<br>
+uuid: 3cebf9b7-ed92-5637-ba42-43fc4eb25b68<br>
+uuid: afb91d3b-9b5c-ac5f-d386-a0a69efdc963<br>
+uuid: 14e522a8-e143-91dc-62bf-a71d321f4659<br>
+uuid: 663febd4-653d-a03b-98cd-a1969f407552<br>
+uuid: 2f79a811-98c4-9c6f-63a0-b9bb4208579b<br>
+uuid: e8f9c47c-c9e3-4907-3c79-1bbd87d50215<br>
+uuid: e7b4ff31-a663-bca7-dae0-a6ea3497402c<br>
+uuid: 2299ebc4-5873-514f-ef7c-4c1767f0d527<br>
+uuid: 2c58cd3e-2706-7424-97cc-5783822eb386<br>
+uuid: 8b74dbc6-e82c-37e0-22ce-fad53ff31c1c<br>
+uuid: 67e9f74b-6b28-1621-80f3-ec32575d8d20<br>
+uuid: 94005966-2adb-d11b-1702-521185ad09b3<br>
+uuid: 9eea7f70-e99b-2c12-2c1a-c7e28535d7ba<br>
+uuid: a4523100-c6c5-f53b-b06b-2e91bfa982fe<br>
+uuid: 1d12b8a5-3083-7d21-58e0-96cba9df78e5<br>
+uuid: 0db11652-09f0-da88-9e6d-d63dee4d7e0a<br>
+uuid: 54a23709-d43d-e8f8-892e-b6dee5280940<br>
+uuid: 20f3aacf-cb2b-9d45-ce74-529c78865dac<br>
+uuid: ea3d683c-d38e-a9ad-6e42-2201037656ef<br>
+uuid: f2ab2ba9-d8cf-736e-5f57-c19b84487364<br>
+uuid: 464e2ac3-8262-37c3-b096-69a4976473ba<br>
+uuid: 53fd2905-42d6-9a3e-b4b9-08c145f3d85d<br>
+uuid: d37a924b-41ef-5b36-9e16-e513caa9171d<br>
+uuid: 36735c82-227f-9253-ab4a-288de3ecbff0<br>
+uuid: 0465f804-7d3c-2eaa-9d3d-e22d03cafc2d<br>
+uuid: 11247998-dac2-54b7-5723-71b14af214a6<br>
+uuid: fba3d9b2-70be-0007-acdc-17f1392f5dd5<br>
+uuid: fcdcf036-5bf6-3f43-1315-6034c8eb006e<br>
+uuid: 4e05c932-deb9-7991-9f28-f3d45bb3e8db<br>
+uuid: fbeabbe9-1627-6f2c-5183-ce6f32293abe<br>
+uuid: da8c1ccf-6254-a234-bd33-731160678af0<br>
+uuid: a9944176-5e57-d85b-0d40-c9d6bf11cfc9<br>
+uuid: 4b7e8bff-f2c6-5192-691e-756bda90624a<br>
+uuid: 5fe59442-89e4-f1a7-ad1a-658a923cfb0d<br>
+uuid: 5aeef242-e94a-c3e2-561c-da371a31eb6e<br>
+uuid: e6f84caa-d0ed-9df4-6d93-e459f5cf23a5<br>
+uuid: edc53b01-77ea-247f-c073-9589c9d9aa7d<br>
+uuid: 031fcf7d-3d0a-24b5-9a04-45384d40c87d<br>
+uuid: c14eb659-79cf-961f-20d7-870663ada407<br>
+uuid: 6ab52d68-7699-297e-9f45-07d2a7fa19da<br>
+uuid: 929e3dd0-0f6b-be96-96db-37ae881e88c0<br>
+uuid: 6d85eca9-17bd-ef25-0ce7-ea96649a190b<br>
+uuid: 9d3e628b-2ddd-1a04-c813-ed694e01f708<br>
+uuid: 1fdccf40-9c49-993f-533f-3421172982de<br>
+uuid: c1b74152-da21-bc60-48f3-d6d43e8dd3ce<br>
+uuid: 5d7f07b8-a313-405d-6388-a37b74208c64<br>
+uuid: 9b40e361-caab-09f4-9de5-c011542a942c<br>
+uuid: 4961169d-fc5c-0c2c-c00a-7427b10ddc0b<br>
+uuid: 43008a5d-c9a8-68c1-85c7-b1115a4fe7a5<br>
+uuid: b5bde6ef-065f-b91b-cdec-54e969f8b616<br>
+uuid: 5371368c-3ded-956d-56e7-5cc165e7d56a<br>
+uuid: 994db502-f508-2f90-d6a8-60d6a5c8d90f<br>
+uuid: d06b54bc-fc7a-f0d8-8808-dbe3328108c7<br>
+uuid: 1d4e170d-e009-80ae-eb7d-2886d680d45c<br>
+uuid: fe67d027-bb17-a3a9-0de2-a73695ee11dd<br>
+uuid: 711cf163-d76e-4061-b9ef-29463001304a<br>
+uuid: 1d138702-caa2-18a4-82cb-6bc04173ffd9<br>
+uuid: 26f97602-c5f4-c031-4b14-b8c48243d5c6<br>
+uuid: b7fb61da-a1f4-125e-357c-f2d5df6b9056<br>
+uuid: fa8e80db-0adf-d1a4-43ec-2be30186fa50<br>
+uuid: 04a255e8-228a-68c0-27a5-5321a9f2e224<br>
+uuid: 121a06b2-3b53-57c0-a817-7a60bc0c64ef<br>
+uuid: 7bc618a1-335a-916e-27ed-a54556956c94<br>
+uuid: 3664a6a4-25b7-9f27-4c85-d31b03d68e5a<br>
+uuid: ef72f63c-73ec-dbbd-a306-fc7bac73611f<br>
+uuid: 6abeb46f-5a00-5dde-29dc-74bfab4e0c91<br>
+uuid: 69c35ffa-9cb7-8fb2-fbc3-09866e202827<br>
+uuid: 8833a1d1-16f0-0e1d-2e0c-63516b0f8d32<br>
+uuid: 4b6a0ee5-a09e-11b6-2d69-46a2b67713cd<br>
+uuid: a55c1397-76fa-fa03-6680-e8fa65766c80<br>
+uuid: 7c76286d-4440-9a40-ed06-9d7c57159ae3<br>
+uuid: 95ee7880-fbbf-8a28-ee6b-d5f02aab4e33<br>
+uuid: 37162ff9-a30e-7882-beb4-e4c2efadd56e<br>
+uuid: 66a876f4-15a5-a314-015e-f8db5927bc11<br>
+uuid: 7ef8f1c4-baab-f3ed-82ed-f0b4b5d50030<br>
+uuid: b17f8c78-985b-fa1c-0384-8e9413330e29<br>
+uuid: 815b8a1e-e953-17af-b576-435f2fc17916<br>
+uuid: f2c34273-3257-a46b-6aa4-9c47f0de7be8<br>
+uuid: 72b13ce7-6199-5e31-f27c-24863cb4fbfe<br>
+uuid: 0bf19a06-8fcc-d09d-1944-ac460ec1c73a<br>
+uuid: 7f96cb3f-edfe-9100-d8d1-e509ae87af5f<br>
+uuid: 3f0b3f69-e45f-114d-5811-4b527a633299<br>
+uuid: 3fc7a7db-63c0-ae29-3252-f1117a7e89b6<br>
+uuid: 79fd65ca-dd12-ce2f-9911-dc6d6c9c7136<br>
+uuid: 63d8fde6-228a-7397-355f-fdce16b52ef5<br>
+uuid: d794ea2a-87c1-ef43-ed2f-7bbb7ca20899<br>
+uuid: 44ae8949-2cc2-fe7c-bb15-8b46b57aaecb<br>
+uuid: 018dcdc9-f438-4f4a-edb2-c87ecacb72b6<br>
+uuid: 96f879a2-2f7b-8a5e-0ee3-c94fe70c5009<br>
+uuid: 0df20a21-2e1d-a381-f40b-1b612bfe1f0a<br>
+uuid: 7e083434-77cb-b364-39de-f24b6b5d8856<br>
+uuid: 6862d7b0-4fa3-b607-e39e-ad43fc2d4461<br>
+uuid: 86743426-4a17-394c-6b4c-c9ca58f1ce8d<br>
+uuid: 9bcd8b38-2bcc-dda3-938f-149154063911<br>
+uuid: b5e54e42-1887-c3e2-a948-a0ba76b7cede<br>
+uuid: 44618cfe-fa86-2310-e7c0-5c0f24244290<br>
+uuid: 5a00b77f-a902-bd41-399a-02fcceecbedb<br>
+uuid: 959369f9-5d81-7a94-4ef2-c65cf3845b31<br>
+uuid: 7d846baa-a439-7dfa-3ee4-b9a54c53b64c<br>
+uuid: 11ddfac0-fc02-1a02-dbc3-006bb2142ec4<br>
+uuid: 03b199f6-d15f-5b79-d48a-8d199445d0fc<br>
+uuid: ebd37161-bb0a-4ac7-4c64-7ac5a9f3013b<br>
+uuid: 9168f4a5-598d-f9aa-8e09-78a3657435c8<br>
+uuid: f0e1a354-2cc5-5226-3f7a-745145559ebe<br>
+uuid: 34cdbfac-e0a8-d80f-b2c5-3fc6c41ac6ae<br>
+uuid: a6921c86-f672-1a76-361c-24cee7d2e1f7<br>
+uuid: dc1dadb7-b26c-f422-3920-4ea09504b5d3<br>
+uuid: d7d120d1-523b-bb8c-4211-e15852ae5c16<br>
+uuid: 86cfa407-e1a4-af9b-6507-da8bd84722b4<br>
+uuid: 6de96032-cb0e-4d3f-54bc-1a81960ac6d6<br>
+uuid: fc2dbdd0-8f9a-e36b-a773-c470d23cba52<br>
+uuid: 6d03ef1d-e483-e84c-9c31-541bbabe4ae3<br>
+uuid: 68c5f0c9-519c-93d8-b2fe-b59211139bc2<br>
+uuid: c44b1d6b-06b6-24b2-967d-dbf0c2b9eec3<br>
+uuid: 4da6dee4-8445-aa15-dc33-6a95e1750ce9<br>
+uuid: 35ce7557-bc22-772e-23f8-17290e05d260<br>
+uuid: 1f8063d2-6ecc-19b3-e98b-7cd15761269e<br>
+uuid: 33e7287d-6d2f-d11c-a13b-25d833e13d0c<br>
+uuid: e269b22a-0ecb-0856-e4b5-257c237a2c0d<br>
+uuid: e4af7a89-662a-2c17-7b50-9d7b946339d1<br>
+uuid: c6a1eba8-fb99-9203-7013-52dbbac9ee7d<br>
+uuid: 8133c3ef-ac78-a0b9-081f-a813e4381730<br>
+uuid: ab56aab0-3fde-c72b-1ff1-c28f36974a13<br>
+uuid: fefa0c24-cc69-6733-f485-2bc943f093f4<br>
+uuid: 73b0df4d-93c6-f2a7-2b72-2ebe65942327<br>
+uuid: cf1151ce-2fd8-7089-24a0-e38efc328aff<br>
+uuid: 033f17ae-d7c6-61fd-15fc-ce3606ed3f46<br>
+uuid: 0e3159bf-ea6b-84de-9dfb-6084e8371dfa<br>
+uuid: a35f08f7-094b-f7aa-10fd-08451ccf21ae<br>
+uuid: c74b160a-773f-f7b3-d40d-da0d4ed5a922<br>
+uuid: c38b5790-a085-e652-8486-9c217b23beda<br>
+uuid: 4a5032a0-880c-9f00-f438-90214af59ab9<br>
+uuid: 1a397d56-a7b6-3231-d06f-f1884bb0a46c<br>
+uuid: fb34b55b-5afc-fc88-d80b-3f1f590fc8f3<br>
+uuid: a2f578ad-a8cd-6d0b-9b10-712265b5f148<br>
+uuid: 6cd58424-b6f0-628f-3a64-494ce9fe07de<br>
+uuid: 76ae1121-abfb-fd92-5e6a-d710be1e04b2<br>
+uuid: 118169cb-5aa8-4448-38a1-b23262bf01fe<br>
+uuid: 7b09596f-8f4c-bfb5-a18d-ee6d40899eb1<br>
+uuid: cb2f630b-ea7e-b1f9-37c0-3f2410075425</p>
+<h2 id="重逢于宝鸡文理学院"><a class="markdownIt-Anchor" href="#重逢于宝鸡文理学院">#</a> 重逢于宝鸡文理学院</h2>
+
   </div>
+
   
+
+  <nav class="post-nav">
     
+    
+  </nav>
+
   
 </article>
 
-
-</section>
-        
-          <aside id="sidebar">
-  
+    </section>
     
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/10/">October 2026</a></li></ul>
+      <aside class="sidebar">
+  <!-- 头像 / 昵称 / 个签 -->
+  <div class="card profile-card">
+    <div class="avatar-wrap glow">
+      <img class="avatar" src="/img/YuAn.jpg" alt="YuYu">
+    </div>
+    <h2 class="nickname">YuYu</h2>
+    <p class="signature">事物的发展总是螺旋式的上升和波浪式的前进，虽然道路是曲折的，但前途事光明的。</p>
+    <div class="social-links">
+      
+        <a href="https://github.com/" target="_blank" rel="noopener" class="social-link">github</a>
+      
+        <a href="mailto:you@example.com" target="_blank" rel="noopener" class="social-link">email</a>
+      
     </div>
   </div>
 
+  
+  <div class="card notice-card">
+    <h3 class="card-title">✦ 公告</h3>
+    <p>欢迎来到YuYu的小站 ✦</p>
+  </div>
+  
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2026/10/04/hello-world/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
   
 </aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2026 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <p></p>
+    
+    <p class="copyright">© 2026 <b>YuYu</b> · <a href="/">Hexo</a></p>
   </div>
 </footer>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+  <button id="back-top" title="返回顶部">▲</button>
+  
 
+  <script>
+  window.GALAXY_CONFIG = {
+    starCount: 220,
+    maxRadius: 1.8,
+    twinkleSpeed: 0.035,
+    driftSpeed: 0.06,
+    meteorCount: 2,
+    meteorInterval: 2600,
+    meteorSpeed: 9,
+    primaryColor: '#00e5ff',
+    secondaryColor: '#a855f7'
+  };
+</script>
+<script src="/js/starfield.js" defer></script>
+<script src="/js/main.js" defer></script>
 
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
 </html>
