@@ -54,512 +54,380 @@
   </div>
 
   <div class="post-content">
-    <h1 id="linux基础"><a class="markdownIt-Anchor" href="#linux基础">#</a> Linux 基础</h1>
-<h3 id="一-linux目录"><a class="markdownIt-Anchor" href="#一-linux目录">#</a> 一、Linux 目录</h3>
-<img title="" src="file:///D:/my-blog/source/images/linux/Linux目录结构.jpg" alt="Linux目录结构" width="477">
-<h3 id="二-linux命令基础"><a class="markdownIt-Anchor" href="#二-linux命令基础">#</a> 二、Linux 命令基础</h3>
-<h4 id="1-什么是命令行-命令"><a class="markdownIt-Anchor" href="#1-什么是命令行-命令">#</a> 1、什么是命令行、命令</h4>
-<p>1、命令行：即 Linux 终端（Terminal），是一种命令提示符页面，以纯 “字符” 的形式操作系统，可以使用各种字符化命令对系统发出操作指令。</p>
-<p>2、命令：即 Linux 程序，一个命令就是一个 Linux 的程序。命令没有图形化页面，可以在 Linux 命令行（终端）提供字符化的反馈。</p>
-<h4 id="2-linux命令通用格式"><a class="markdownIt-Anchor" href="#2-linux命令通用格式">#</a> 2、Linux 命令通用格式</h4>
-<p>command [-options] [parameter]</p>
+    <h1 id="Linux基础"><a href="#Linux基础" class="headerlink" title="Linux基础"></a>Linux基础</h1><h3 id="一、Linux目录"><a href="#一、Linux目录" class="headerlink" title="一、Linux目录"></a>一、Linux目录</h3><img title="" src="../../public/images/linux/Linux目录结构.jpg" alt="Linux目录结构" width="477">
+
+<h3 id="二、Linux命令基础"><a href="#二、Linux命令基础" class="headerlink" title="二、Linux命令基础"></a>二、Linux命令基础</h3><h4 id="1、什么是命令行、命令"><a href="#1、什么是命令行、命令" class="headerlink" title="1、什么是命令行、命令"></a>1、什么是命令行、命令</h4><p>1、命令行：即Linux终端（Terminal），是一种命令提示符页面，以纯“字符”的形式操作系统，可以使用各种字符化命令对系统发出操作指令。</p>
+<p>2、命令：即Linux程序，一个命令就是一个Linux的程序。命令没有图形化页面，可以在Linux命令行（终端）提供字符化的反馈。</p>
+<h4 id="2、Linux命令通用格式"><a href="#2、Linux命令通用格式" class="headerlink" title="2、Linux命令通用格式"></a>2、Linux命令通用格式</h4><p>command [-options] [parameter]</p>
 <ul>
-<li>
-<p>command 命令本身</p>
+<li><p>command 命令本身</p>
 </li>
-<li>
-<p>-options ：[可选、非必填] 命令的一些选项，可以通过选项控制命令的行为细节</p>
+<li><p>-options ：[可选、非必填]命令的一些选项，可以通过选项控制命令的行为细节</p>
 </li>
-<li>
-<p>parameter ：[可选、非必填] 命令的参数，多数用于命令的指向目标等</p>
+<li><p>parameter ：[可选、非必填]命令的参数，多数用于命令的指向目标等</p>
 </li>
 </ul>
 <p>eg：</p>
 <ul>
-<li>
-<p>ls -l /home/yuyu , ls 是命令本身，-l 是选项，/home/yuyu 是参数</p>
+<li><p>ls -l &#x2F;home&#x2F;yuyu , ls是命令本身，-l是选项，&#x2F;home&#x2F;yuyu是参数</p>
 </li>
-<li>
-<p>意思是以列表的形式，显示 /home/yuyu 目录内的内容</p>
+<li><p>意思是以列表的形式，显示&#x2F;home&#x2F;yuyu目录内的内容</p>
 </li>
-<li>
-<p>cp -r test1 test2, cp 是命令本身，-r 是选项，test1，test2 是参数</p>
+<li><p>cp -r test1 test2, cp 是命令本身，-r是选项，test1，test2是参数</p>
 </li>
-<li>
-<p>意思是复制文件夹 test1 成为 test2</p>
+<li><p>意思是复制文件夹test1成为test2</p>
 </li>
 </ul>
-<h4 id="3-ls命令"><a class="markdownIt-Anchor" href="#3-ls命令">#</a> 3、ls 命令</h4>
-<p>1、ls [-a -l -h] [Linux 路径]</p>
+<h4 id="3、ls命令"><a href="#3、ls命令" class="headerlink" title="3、ls命令"></a>3、ls命令</h4><p>1、ls [-a -l -h] [Linux 路径]</p>
 <ul>
-<li>
-<p>-a -l -h 是可选项</p>
+<li><p>-a -l -h是可选项</p>
 </li>
-<li>
-<p>Linux 路径是此命令的可选的参数</p>
+<li><p>Linux路径是此命令的可选的参数</p>
 </li>
 </ul>
-<p>当不使用选项和参数是，直接使用 ls 命令本体，表示：以平铺形式，列出当前工作目录下的内容</p>
-<p><img src="D:%5Cmy-blog%5Csource%5Cimages%5Clinux%5Cls%E5%91%BD%E4%BB%A4.png" alt="列出内容"></p>
+<p>当不使用选项和参数是，直接使用ls命令本体，表示：以平铺形式，列出当前工作目录下的内容</p>
+<p><img src="D:\my-blog\source\images\linux\ls命令.png" alt="列出内容"></p>
 <ul>
-<li>当前工作目录可以使用 pwd 命令查看，打开终端默认加载 Home 目录，Home 目录是 Linux 系统的个人账户目录</li>
+<li>当前工作目录可以使用pwd命令查看，打开终端默认加载Home目录，Home目录是Linux系统的个人账户目录</li>
 </ul>
-<p>2、ls 参数作用</p>
+<p>2、ls参数作用</p>
 <ul>
-<li>
-<p>-a 选项，表示 all 的意思，及列出所有文件 (包含隐藏文件 / 文件夹)</p>
+<li><p>-a 选项，表示all的意思，及列出所有文件(包含隐藏文件&#x2F;文件夹)</p>
 <ul>
-<li>” . “开头的即隐藏文件 / 文件夹</li>
+<li>” . “开头的即隐藏文件&#x2F;文件夹</li>
 </ul>
 </li>
-<li>
-<p>只有通过 - a 选项，才能看见隐藏文件 / 文件夹</p>
+<li><p>只有通过-a选项，才能看见隐藏文件&#x2F;文件夹</p>
 </li>
-<li>
-<p>-l 选项，表示：以列表 (竖向排列) 的形式展示内容，并展示更多信息</p>
+<li><p>-l 选项，表示：以列表(竖向排列)的形式展示内容，并展示更多信息</p>
 </li>
-<li>
-<p>-h 选项，需要和 - l 搭配使用，以更加人性化方式显示文件的大小单位</p>
+<li><p>-h选项，需要和-l搭配使用，以更加人性化方式显示文件的大小单位</p>
 </li>
 </ul>
 <img title="" src="file:///D:/my-blog/source/images/linux/ls参数.png" alt="ls -a / -l / -h" width="690">
-<h4 id="4-cd-pwd命令"><a class="markdownIt-Anchor" href="#4-cd-pwd命令">#</a> 4、cd、pwd 命令</h4>
-<p>1、cd [Linux 路径]</p>
+
+<h4 id="4、cd、pwd命令"><a href="#4、cd、pwd命令" class="headerlink" title="4、cd、pwd命令"></a>4、cd、pwd命令</h4><p>1、cd [Linux路径]</p>
 <ul>
-<li>
-<p>cd 命令无需选项，只有参数，表示切换到哪个目录下</p>
+<li><p>cd命令无需选项，只有参数，表示切换到哪个目录下</p>
 </li>
-<li>
-<p>cd 命令直接执行，不写参数，表示回到用户的 Home 目录下</p>
+<li><p>cd命令直接执行，不写参数，表示回到用户的Home目录下</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource%5Cimages%5Clinux%5Ccd.png" alt="cd命令"></p>
+<p><img src="D:\my-blog\source\images\linux\cd.png" alt="cd命令"></p>
 <p>2、pwd</p>
 <ul>
-<li>
-<p>pwd 命令，无参数，无选项，直接输入 pwd 即可</p>
+<li><p>pwd命令，无参数，无选项，直接输入pwd即可</p>
 </li>
-<li>
-<p>查看当前所在的工作目录</p>
+<li><p>查看当前所在的工作目录</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource%5Cimages%5Clinux%5Cpwd.png" alt="pwd"></p>
+<p><img src="D:\my-blog\source\images\linux\pwd.png" alt="pwd"></p>
 <p>3、路径</p>
 <ul>
-<li>
-<p>绝对路径：以根目录为起点，描述路径的一种写法，路径描述以 “/” 开头</p>
+<li><p>绝对路径：以根目录为起点，描述路径的一种写法，路径描述以 “&#x2F;” 开头</p>
 </li>
-<li>
-<p>相对路径：以当前目录为起点，描述路径的一种写法，路径描述无需以 “/” 开头</p>
+<li><p>相对路径：以当前目录为起点，描述路径的一种写法，路径描述无需以 “&#x2F;” 开头</p>
 </li>
 </ul>
 <p>4、特殊路径符</p>
 <ul>
-<li>
-<p>. ： 表示当前目录</p>
+<li><p>. ： 表示当前目录</p>
 </li>
-<li>
-<p>… ：表示上级目录</p>
+<li><p>.. ：表示上级目录</p>
 </li>
-<li>
-<p>~ :  表示 Home 目录</p>
+<li><p>~ :  表示Home目录</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource%5Cimages%5Clinux%5C%E7%89%B9%E6%AE%8A%E8%B7%AF%E5%BE%84%E7%AC%A6.png" alt="特殊路径符"></p>
-<h4 id="5-mkdir"><a class="markdownIt-Anchor" href="#5-mkdir">#</a> 5、mkdir</h4>
-<p>mkdir [-p] Linux 路径</p>
+<p><img src="D:\my-blog\source\images\linux\特殊路径符.png" alt="特殊路径符"></p>
+<h4 id="5、mkdir"><a href="#5、mkdir" class="headerlink" title="5、mkdir"></a>5、mkdir</h4><p>mkdir [-p] Linux路径</p>
 <ul>
-<li>
-<p>创建新的目录 (文件夹)</p>
+<li><p>创建新的目录(文件夹)</p>
 </li>
-<li>
-<p>参数必填，表示 Linux 路径，即所创建文件夹的路径，相对、绝对路径均可</p>
+<li><p>参数必填，表示Linux路径，即所创建文件夹的路径，相对、绝对路径均可</p>
 </li>
-<li>
-<p>-p 选项可选，表示自动创建不存在的父目录，适用于创建连续多层级的目录</p>
+<li><p>-p 选项可选，表示自动创建不存在的父目录，适用于创建连续多层级的目录</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource%5Cimages%5Clinux%5Cmkdir.png" alt="mldir"></p>
-<h4 id="6-touch-cat-more"><a class="markdownIt-Anchor" href="#6-touch-cat-more">#</a> 6、touch、cat、more</h4>
-<p>1、touch Linux 路径</p>
+<p><img src="D:\my-blog\source\images\linux\mkdir.png" alt="mldir"></p>
+<h4 id="6、touch、cat、more"><a href="#6、touch、cat、more" class="headerlink" title="6、touch、cat、more"></a>6、touch、cat、more</h4><p>1、touch Linux路径</p>
 <ul>
-<li>
-<p>建立文件</p>
+<li><p>建立文件</p>
 </li>
-<li>
-<p>touch 命令无选项，参数必填，表示要创建的文件路径，相对、绝对路径，特殊路径符均可</p>
+<li><p>touch命令无选项，参数必填，表示要创建的文件路径，相对、绝对路径，特殊路径符均可</p>
 </li>
 </ul>
 <p>2、cat</p>
 <ul>
-<li>
-<p>cat Linux 路径</p>
+<li><p>cat Linux路径</p>
 </li>
-<li>
-<p>cat 同样没有选项，只有必填参数，参数表示：查看的文件路径，相对、绝对路径，特殊路径符均</p>
+<li><p>cat同样没有选项，只有必填参数，参数表示：查看的文件路径，相对、绝对路径，特殊路径符均</p>
 </li>
-<li>
-<p>cat 查看内容</p>
+<li><p>cat查看内容</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/touch-cat.png" alt="touch cat"></p>
+<p><img src="D:\my-blog\source/images/linux/touch-cat.png" alt="touch cat"></p>
 <p>3、more</p>
 <ul>
-<li>
-<p>more Linux 路径</p>
+<li><p>more Linux路径</p>
 </li>
-<li>
-<p>more 同样没有选项，只有必填参数，参数表示：查看的文件路径，相对、绝对路径，特殊路径符均</p>
+<li><p>more同样没有选项，只有必填参数，参数表示：查看的文件路径，相对、绝对路径，特殊路径符均</p>
 </li>
-<li>
-<p>cat 直接将全部内容显示出来</p>
+<li><p>cat直接将全部内容显示出来</p>
 </li>
-<li>
-<p>more 支持翻页，内容过多可以一页一页展示</p>
+<li><p>more支持翻页，内容过多可以一页一页展示</p>
 </li>
-<li>
-<p>空格翻页，q 退出查看</p>
+<li><p>空格翻页，q退出查看</p>
 </li>
 </ul>
-<h4 id="7-cp-mv-rm"><a class="markdownIt-Anchor" href="#7-cp-mv-rm">#</a> 7、cp、mv、rm</h4>
-<p>1、cp</p>
+<h4 id="7、cp、mv、rm"><a href="#7、cp、mv、rm" class="headerlink" title="7、cp、mv、rm"></a>7、cp、mv、rm</h4><p>1、cp</p>
 <ul>
-<li>
-<p>复制文件或文件夹</p>
+<li><p>复制文件或文件夹</p>
 </li>
-<li>
-<p>cp [-r] 参数 1 参数 2</p>
+<li><p>cp [-r] 参数1 参数2</p>
 </li>
-<li>
-<p>-r 可选，用于复制文件夹使用表示递归</p>
+<li><p>-r可选，用于复制文件夹使用表示递归</p>
 </li>
-<li>
-<p>参数 1：Linux 路径，表示被复制的文件或文件夹</p>
+<li><p>参数1：Linux路径，表示被复制的文件或文件夹</p>
 </li>
-<li>
-<p>参数 2：Linux 路径，表示要复制去的地方</p>
+<li><p>参数2：Linux路径，表示要复制去的地方</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/cp1.png" alt="cp"></p>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/cp2.png" alt="cp"></p>
+<p><img src="D:\my-blog\source/images/linux/cp1.png" alt="cp"></p>
+<p><img src="D:\my-blog\source/images/linux/cp2.png" alt="cp"></p>
 <p>2、mv</p>
 <ul>
-<li>
-<p>mv 表示移动的文件或文件夹</p>
+<li><p>mv表示移动的文件或文件夹</p>
 </li>
-<li>
-<p>mv 参数 1 参数 2</p>
+<li><p>mv 参数1 参数2</p>
 </li>
-<li>
-<p>参数 1：Linux 路径，表示被复移动的文件或文件夹</p>
+<li><p>参数1：Linux路径，表示被复移动的文件或文件夹</p>
 </li>
-<li>
-<p>参数 2：Linux 路径，表示要移动的去的地方，如果目标不存在则进行改名确保目标存在</p>
+<li><p>参数2：Linux路径，表示要移动的去的地方，如果目标不存在则进行改名确保目标存在</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/mv.png" alt="mv"></p>
+<p><img src="D:\my-blog\source/images/linux/mv.png" alt="mv"></p>
 <p>3、rm</p>
 <ul>
-<li>
-<p>rm 用于删除文件或文件夹</p>
+<li><p>rm用于删除文件或文件夹</p>
 </li>
-<li>
-<p>rm [-r -f] 参数 1 参数 2 … 参数 N</p>
+<li><p>rm [-r -f] 参数1 参数2 … 参数N</p>
 </li>
-<li>
-<p>-r 用于删除文件夹</p>
+<li><p>-r 用于删除文件夹</p>
 </li>
-<li>
-<p>-f 强制删除</p>
+<li><p>-f 强制删除</p>
 <ul>
-<li>
-<p>普通用户删除不会弹出提示，root 用户删除会有提示</p>
+<li><p>普通用户删除不会弹出提示，root用户删除会有提示</p>
 </li>
-<li>
-<p>一般用户用不到 -f</p>
+<li><p>一般用户用不到 -f</p>
 </li>
 </ul>
 </li>
-<li>
-<p>参数表示要删除文件或文件夹的路径，用空格隔开</p>
+<li><p>参数表示要删除文件或文件夹的路径，用空格隔开</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/rm.png" alt="rm"></p>
-<p>4、rm 命令支持通配符 * ，用于模糊匹配</p>
+<p><img src="D:\my-blog\source/images/linux/rm.png" alt="rm"></p>
+<p>4、rm命令支持通配符 * ，用于模糊匹配</p>
 <ul>
-<li>
-<ul>
-<li>表示通配符，即匹配任意内容 (包含空)</li>
+<li><ul>
+<li>表示通配符，即匹配任意内容(包含空)</li>
 </ul>
 </li>
-<li>
-<p>test*，匹配以 test 开头的内容</p>
+<li><p>test*，匹配以test开头的内容</p>
 </li>
-<li>
-<p>*test，匹配以 test 结尾的内容</p>
+<li><p>*test，匹配以test结尾的内容</p>
 </li>
-<li>
-<p>*test*，匹配任何包含 test 的内容</p>
+<li><p>*test*，匹配任何包含test的内容</p>
 </li>
 </ul>
-<h4 id="8-which-find-grep-wc"><a class="markdownIt-Anchor" href="#8-which-find-grep-wc">#</a> 8、which、find、grep、wc</h4>
-<p>1、which</p>
+<h4 id="8、which、find、grep、wc"><a href="#8、which、find、grep、wc" class="headerlink" title="8、which、find、grep、wc"></a>8、which、find、grep、wc</h4><p>1、which</p>
 <ul>
-<li>
-<p>which 参看命令的程序文件存放在哪里</p>
+<li><p>which 参看命令的程序文件存放在哪里</p>
 </li>
-<li>
-<p>which 命令</p>
+<li><p>which 命令</p>
 </li>
 </ul>
 <p>2、find</p>
 <ul>
-<li>
-<p>通过 find 命令查找指定的文件</p>
+<li><p>通过find命令查找指定的文件</p>
 </li>
-<li>
-<p>find 起始路径 -name “被查找的文件名”</p>
+<li><p>find 起始路径 -name “被查找的文件名”</p>
 </li>
-<li>
-<p>支持模糊查询 *</p>
+<li><p>支持模糊查询 *</p>
 <ul>
-<li>
-<p>test*，匹配以 test 开头的内容</p>
+<li><p>test*，匹配以test开头的内容</p>
 </li>
-<li>
-<p>*test，匹配以 test 结尾的内容</p>
+<li><p>*test，匹配以test结尾的内容</p>
 </li>
-<li>
-<p>*test*，匹配任何包含 test 的内容</p>
+<li><p>*test*，匹配任何包含test的内容</p>
 </li>
 </ul>
 </li>
-<li>
-<p>find 起始路径 -size +|- n [kMG]</p>
+<li><p>find 起始路径 -size +|- n[kMG]</p>
 <ul>
 <li>+、- ：表示大于和小于</li>
 <li>n：表示大小数字</li>
-<li>kMG：表示大小单位，k (小写字母) 表示 kb，M 表示 MB，G 表示 GB</li>
+<li>kMG：表示大小单位，k(小写字母)表示kb，M表示MB，G表示GB</li>
 </ul>
 </li>
 </ul>
 <p>3、grep</p>
 <ul>
-<li>
-<p>从文件中通过关键字过滤文件的行</p>
+<li><p>从文件中通过关键字过滤文件的行</p>
 </li>
-<li>
-<p>grep [-n] 关键字 文件路径</p>
+<li><p>grep [-n] 关键字 文件路径</p>
 <ul>
-<li>
-<p>-n 可选，表示在结果中显示匹配的行的行号</p>
+<li><p>-n 可选，表示在结果中显示匹配的行的行号</p>
 </li>
-<li>
-<p>关键字，表示过滤的关键字，带有空格或其它特殊符号，建议用 &quot; &quot; 将关键字包围起来</p>
+<li><p>关键字，表示过滤的关键字，带有空格或其它特殊符号，建议用 “ “将关键字包围起来</p>
 </li>
-<li>
-<p>文件路径：表示过滤内容的文件路径， <mark> 可作为内容输入端口 </mark></p>
+<li><p>文件路径：表示过滤内容的文件路径， <mark> 可作为内容输入端口 </mark></p>
 </li>
 </ul>
 </li>
 </ul>
 <img title="" src="file:///D:/my-blog/source/images/linux/which-find-grep.jpg" alt="which、find、grep、wc" width="503">
+
 <p>4、wc</p>
 <ul>
-<li>
-<p>wc 命令统计文件的行数、单词数量</p>
+<li><p>wc命令统计文件的行数、单词数量</p>
 </li>
-<li>
-<p>wc [-c -m -l -w] 文件路径</p>
+<li><p>wc [-c -m -l -w] 文件路径</p>
 </li>
-<li>
-<p>-c ，统计 bytes 数量</p>
+<li><p>-c ，统计bytes数量</p>
 </li>
-<li>
-<p>-m ，统计字符数量</p>
+<li><p>-m ，统计字符数量</p>
 </li>
-<li>
-<p>-l ，统计行数</p>
+<li><p>-l ，统计行数</p>
 </li>
-<li>
-<p>-w ，统计单词数量</p>
+<li><p>-w ，统计单词数量</p>
 </li>
-<li>
-<p>参数，文件路径，被统计的文件，可作为内容输入端口</p>
+<li><p>参数，文件路径，被统计的文件，可作为内容输入端口</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/grep-wc.png" alt="wc"></p>
-<h4 id="9-管道符"><a class="markdownIt-Anchor" href="#9-管道符">#</a> 9、管道符</h4>
-<ul>
-<li>
-<p>|</p>
+<p><img src="D:\my-blog\source/images/linux/grep-wc.png" alt="wc"></p>
+<h4 id="9、管道符"><a href="#9、管道符" class="headerlink" title="9、管道符"></a>9、管道符</h4><ul>
+<li><p>|</p>
 </li>
-<li>
-<p>将管道符左边命令的结果，作为右边命令的输入</p>
+<li><p>将管道符左边命令的结果，作为右边命令的输入</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/grep.png" alt="|"></p>
-<h4 id="10-echo-重定向符-tail"><a class="markdownIt-Anchor" href="#10-echo-重定向符-tail">#</a> 10、echo、重定向符、tail</h4>
-<p>1、echo</p>
+<p><img src="D:\my-blog\source/images/linux/grep.png" alt="|"></p>
+<h4 id="10、echo、重定向符、tail"><a href="#10、echo、重定向符、tail" class="headerlink" title="10、echo、重定向符、tail"></a>10、echo、重定向符、tail</h4><p>1、echo</p>
 <ul>
-<li>
-<p>在命令行内输出指定内容</p>
+<li><p>在命令行内输出指定内容</p>
 </li>
-<li>
-<p>echo 输出内容</p>
+<li><p>echo 输出内容</p>
 </li>
-<li>
-<p>无需选项，参数，表示输出内容，复杂内容用 “ ”，包围</p>
+<li><p>无需选项，参数，表示输出内容，复杂内容用 “ ”，包围</p>
 </li>
-<li>
-<p>echo pwd</p>
+<li><p>echo pwd</p>
 <ul>
-<li>
-<p>本意输出当前路径，但是 pwd 被当作普通字符输出</p>
+<li><p>本意输出当前路径，但是pwd被当作普通字符输出</p>
 </li>
-<li>
-<p>可以使用反引号 `` 将其包围起来，会被当命令执行，而非普通字符</p>
+<li><p>可以使用反引号 &#96;&#96;将其包围起来，会被当命令执行，而非普通字符</p>
 </li>
 </ul>
 </li>
 </ul>
 <p>2、重定向符</p>
 <ul>
-<li>
-<p>&gt; 和 &gt;&gt;</p>
+<li><p>&gt;和&gt;&gt;</p>
 </li>
-<li>
-<p>&gt;, 将左侧命令结果，覆盖写入符号右边指定的文件中</p>
+<li><p>&gt;,将左侧命令结果，覆盖写入符号右边指定的文件中</p>
 </li>
-<li>
-<p>&gt;&gt;, 将左侧命令结果，追加写入符号右边指定的文件中</p>
+<li><p>&gt;&gt;,将左侧命令结果，追加写入符号右边指定的文件中</p>
 </li>
 </ul>
 <p>3、tail</p>
 <ul>
-<li>
-<p>可以查看文件尾部内容，追踪文件的最新更改</p>
+<li><p>可以查看文件尾部内容，追踪文件的最新更改</p>
 </li>
-<li>
-<p>tail [-f -num] Linux 路径</p>
+<li><p>tail [-f -num] Linux 路径</p>
 </li>
-<li>
-<p>参数 Linux 路径，表示被跟踪的文件路径</p>
+<li><p>参数Linux路径，表示被跟踪的文件路径</p>
 </li>
-<li>
-<p>-f，表示持续跟踪</p>
+<li><p>-f，表示持续跟踪</p>
 </li>
-<li>
-<p>-num，表示查看尾部多少行，默认 10 行</p>
+<li><p>-num，表示查看尾部多少行，默认10行</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/echo-tail.png" alt="echo、重定向符、tail"></p>
-<h4 id="11-vivim"><a class="markdownIt-Anchor" href="#11-vivim">#</a> 11、vi\vim</h4>
-<p>vi/vim，Linux 系统里面的文本编辑器，vim 是加强版的 vi</p>
+<p><img src="D:\my-blog\source/images/linux/echo-tail.png" alt="echo、重定向符、tail"></p>
+<h4 id="11、vi-vim"><a href="#11、vi-vim" class="headerlink" title="11、vi\vim"></a>11、vi\vim</h4><p>vi&#x2F;vim，Linux系统里面的文本编辑器，vim是加强版的vi</p>
 <ul>
-<li>
-<p>vi/vim 文件路径</p>
+<li><p>vi&#x2F;vim 文件路径</p>
 <ul>
-<li>
-<p>如果文件不存在，编辑新文件</p>
+<li><p>如果文件不存在，编辑新文件</p>
 </li>
-<li>
-<p>如果文件存在，编辑已有文件</p>
+<li><p>如果文件存在，编辑已有文件</p>
 </li>
 </ul>
 </li>
-<li>
-<p>命令模式</p>
+<li><p>命令模式</p>
 </li>
-<li>
-<p>输入模式</p>
+<li><p>输入模式</p>
 </li>
-<li>
-<p>底线命令模式</p>
+<li><p>底线命令模式</p>
 </li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/vim.png" alt="vi/vim"></p>
-<h3 id="三-用户和权限"><a class="markdownIt-Anchor" href="#三-用户和权限">#</a> 三、用户和权限</h3>
-<h4 id="1-root用户超级管理员"><a class="markdownIt-Anchor" href="#1-root用户超级管理员">#</a> 1、root 用户 (超级管理员)</h4>
-<ul>
-<li>root 用户拥有最大的操作系统权限，而普通用户在许多地方的权限是受限的。</li>
-<li>普通用户的权限，一般在其 HOME 目录内是不受限的</li>
-<li>一旦出了 HOME 目录，大多数地方，普通用户只有只读和执行权限，无修改权限</li>
+<p><img src="D:\my-blog\source/images/linux/vim.png" alt="vi&#x2F;vim"></p>
+<h3 id="三、用户和权限"><a href="#三、用户和权限" class="headerlink" title="三、用户和权限"></a>三、用户和权限</h3><h4 id="1、root用户-超级管理员"><a href="#1、root用户-超级管理员" class="headerlink" title="1、root用户(超级管理员)"></a>1、root用户(超级管理员)</h4><ul>
+<li>root用户拥有最大的操作系统权限，而普通用户在许多地方的权限是受限的。</li>
+<li>普通用户的权限，一般在其HOME目录内是不受限的</li>
+<li>一旦出了HOME目录，大多数地方，普通用户只有只读和执行权限，无修改权限</li>
 </ul>
-<h4 id="2-su命令切换用户"><a class="markdownIt-Anchor" href="#2-su命令切换用户">#</a> 2、su 命令切换用户</h4>
-<ul>
-<li>
-<p>su [-] 用户名</p>
+<h4 id="2、su命令切换用户"><a href="#2、su命令切换用户" class="headerlink" title="2、su命令切换用户"></a>2、su命令切换用户</h4><ul>
+<li><p>su [-] 用户名</p>
 </li>
-<li>
-<ul>
+<li><ul>
 <li>符号可选，表示切换用户后加载环境变量，建议带上</li>
 </ul>
 </li>
-<li>
-<p>参数：用户名，表示要切换的用户，用户名省略，表示切换 root 用户</p>
+<li><p>参数：用户名，表示要切换的用户，用户名省略，表示切换root用户</p>
 </li>
-<li>
-<p>exit 退回上一用户，也可以使用 ctrl+d</p>
+<li><p>exit退回上一用户，也可以使用ctrl+d</p>
 </li>
-<li>
-<p>使用普通用户，切换其他用户需要密码，如切换 root 用户</p>
+<li><p>使用普通用户，切换其他用户需要密码，如切换root用户</p>
 </li>
-<li>
-<p>使用 root 用户切换其他用户，无需密码，可以直接切换</p>
+<li><p>使用root用户切换其他用户，无需密码，可以直接切换</p>
 </li>
 </ul>
-<h4 id="3-sudo临时提权"><a class="markdownIt-Anchor" href="#3-sudo临时提权">#</a> 3、sudo 临时提权</h4>
-<ul>
-<li>
-<p>在其它命令之前，带上 sudo，即可为这一条命令临时赋予 root 权限</p>
+<h4 id="3、sudo临时提权"><a href="#3、sudo临时提权" class="headerlink" title="3、sudo临时提权"></a>3、sudo临时提权</h4><ul>
+<li><p>在其它命令之前，带上sudo，即可为这一条命令临时赋予root权限</p>
 </li>
-<li>
-<p>但不是所有的用户，都有权使用 sudo，我们要为普通用户配置 sudo 认证</p>
+<li><p>但不是所有的用户，都有权使用sudo，我们要为普通用户配置sudo认证</p>
 </li>
-<li>
-<p>为普通用户配置 sudo 认证</p>
+<li><p>为普通用户配置sudo认证</p>
 <ul>
-<li>
-<p>切换 root 用户，执行 visudo，会自动通过 vi 编辑器打开 /etc/sudoers</p>
+<li><p>切换root用户，执行visudo，会自动通过vi编辑器打开&#x2F;etc&#x2F;sudoers</p>
 </li>
-<li>
-<p>在文件的最后加上 用户名 ALL=(ALL)     NOPASSWD： ALL</p>
+<li><p>在文件的最后加上 用户名 ALL&#x3D;(ALL)     NOPASSWD： ALL</p>
 <ul>
-<li>其中最后的 NOPASSWD:ALL 表示使用 sudo 命令，无需输入密码</li>
+<li>其中最后的NOPASSWD:ALL表示使用sudo命令，无需输入密码</li>
 </ul>
 </li>
-<li>
-<p>最后 wq 退出</p>
+<li><p>最后wq退出</p>
 </li>
 </ul>
 </li>
 </ul>
-<h4 id="4-用户和用户组"><a class="markdownIt-Anchor" href="#4-用户和用户组">#</a> 4、用户和用户组</h4>
+<h4 id="4、用户和用户组"><a href="#4、用户和用户组" class="headerlink" title="4、用户和用户组"></a>4、用户和用户组</h4><ul>
+<li><p>1、Linux系统中可以：</p>
 <ul>
-<li>
-<p>1、Linux 系统中可以：</p>
-<ul>
-<li>
-<p>配置多用户</p>
+<li><p>配置多用户</p>
 </li>
-<li>
-<p>配置多用户组</p>
+<li><p>配置多用户组</p>
 </li>
-<li>
-<p>用户可以加入多个用户组</p>
+<li><p>用户可以加入多个用户组</p>
 </li>
 </ul>
 </li>
-<li>
-<p>2、Linux 中关于权限的管控级别有 2 个级别，分别是：</p>
+<li><p>2、Linux中关于权限的管控级别有2个级别，分别是：</p>
 <ul>
 <li>针对用户的权限管控</li>
 <li>针对用户组的权限管控</li>
 </ul>
 </li>
-<li>
-<p>3、创建用户组（以下命令需 root 用户执行）</p>
+<li><p>3、创建用户组（以下命令需root用户执行）</p>
 <ul>
 <li>创建用户组</li>
 <li>groupadd 用户组名</li>
@@ -567,25 +435,21 @@
 <li>groupdel 用户组名</li>
 </ul>
 </li>
-<li>
-<p>4、用户管理</p>
+<li><p>4、用户管理</p>
 <ul>
 <li>创建用户</li>
-<li>useradd [-g -d] 用户名
-<ul>
-<li>选项 - g：指定用户组，不指定 - g，会自动创建同名组并自动加入，指定 - g 需要组已经存在，如已存在通名组，必须使用 - g</li>
-<li>选项 - d：指定用户 HOME 路径，不指定，HOME 目录默认在：/home/ 用户名</li>
+<li>useradd [-g -d ] 用户名<ul>
+<li>选项-g：指定用户组，不指定-g，会自动创建同名组并自动加入，指定-g需要组已经存在，如已存在通名组，必须使用-g</li>
+<li>选项-d：指定用户HOME路径，不指定，HOME目录默认在：&#x2F;home&#x2F;用户名</li>
 </ul>
 </li>
 <li>删除用户</li>
-<li>userdel [-r] 用户名
-<ul>
-<li>-r：，删除用户的 HOME 目录，不使用 - r，删除用户时，HOME 目录保留</li>
+<li>userdel [-r] 用户名<ul>
+<li>-r：，删除用户的HOME目录，不使用-r，删除用户时，HOME目录保留</li>
 </ul>
 </li>
 <li>查看用户所属组</li>
-<li>id [用户名]
-<ul>
+<li>id [用户名]<ul>
 <li>参数：用户名，被查看的用户，如果不提供则查看自身</li>
 </ul>
 </li>
@@ -593,187 +457,158 @@
 <li>usermod -aG 用户组 用户名 ，将指定用户加入指定用户组</li>
 </ul>
 </li>
-<li>
-<p>5、getent</p>
+<li><p>5、getent</p>
 <ul>
-<li>getent passwd 命令可以查看当前用户有那些用户
-<ul>
-<li>显示七分信息：用户名：密码（X）：用户 id：组 ID：HOME 目录：执行终端（默认 bash）</li>
+<li>getent passwd命令可以查看当前用户有那些用户<ul>
+<li>显示七分信息：用户名：密码（X）：用户id：组ID：HOME目录：执行终端（默认bash）</li>
 </ul>
 </li>
-<li>getent group 命令查看有哪些用户组
-<ul>
-<li>包含 3 份信息，组名称：组认证（显示 X）：组 ID</li>
+<li>getent group命令查看有哪些用户组<ul>
+<li>包含3份信息，组名称:组认证（显示X）：组ID</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h4 id="5-权限"><a class="markdownIt-Anchor" href="#5-权限">#</a> 5、权限</h4>
-<ul>
+<h4 id="5、权限"><a href="#5、权限" class="headerlink" title="5、权限"></a>5、权限</h4><ul>
 <li>1、认识权限信息</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/permissions.png" alt="权限"></p>
+<p><img src="D:\my-blog\source/images/linux/permissions.png" alt="权限"></p>
 <ul>
 <li>2、权限信息</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/permissions-info.jpg" alt="权限信息"></p>
+<p><img src="D:\my-blog\source/images/linux/permissions-info.jpg" alt="权限信息"></p>
 <ul>
-<li>
-<p>3、rwx</p>
+<li><p>3、rwx</p>
 <ul>
-<li>
-<p>r 表示读权限</p>
+<li><p>r表示读权限</p>
 </li>
-<li>
-<p>w 表示写权限</p>
+<li><p>w表示写权限</p>
 </li>
-<li>
-<p>x 表示可执行权限</p>
+<li><p>x表示可执行权限</p>
 </li>
-<li>
-<p>r: 针对文件可查看文件内容</p>
+<li><p>r:针对文件可查看文件内容</p>
 <ul>
-<li>针对文件夹，可查看文件夹内容，如 ls 命令</li>
+<li>针对文件夹，可查看文件夹内容，如ls命令</li>
 </ul>
 </li>
-<li>
-<p>w: 针对文件可修改此文件</p>
+<li><p>w:针对文件可修改此文件</p>
 <ul>
 <li>针对文件夹，可以在文件夹内：创建、删除‘、改名等</li>
 </ul>
 </li>
-<li>
-<p>x: 针对文件可将文件当作为可执行的程序</p>
+<li><p>x:针对文件可将文件当作为可执行的程序</p>
 <ul>
-<li>针对文件夹，表示可以更改工作目录到此文件夹，即 cd 进入</li>
+<li>针对文件夹，表示可以更改工作目录到此文件夹，即cd进入</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>
-<p>4、chmod 命令</p>
+<li><p>4、chmod命令</p>
 <ul>
-<li>使用 chmod 命令，修改文件、文件夹的权限信息</li>
-<li>只有文件、文件夹的所属用户和 root 用户可以修改。</li>
-<li>chmod [-R] 权限 文件或文件夹
-<ul>
+<li>使用chmod命令，修改文件、文件夹的权限信息</li>
+<li>只有文件、文件夹的所属用户和root用户可以修改。</li>
+<li>chmod [-R] 权限 文件或文件夹<ul>
 <li>选项：-R，对文件夹内所有内容应用同样的操作</li>
 </ul>
 </li>
-<li>eg：
+<li>eg：<ul>
+<li>chmod u&#x3D;rwx g&#x3D;rx o&#x3D;x hello.txt，将文件的权限修改为：rwxr-x–x<ul>
+<li>u表示用户权限，g表示用户组权限，o表示其他用户权限</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>5、权限的数字序号</p>
+</li>
+</ul>
+<p><img src="D:\my-blog\source/images/linux/permissions-numeric.jpg" alt="权限的数字序号"></p>
 <ul>
-<li>chmod u=rwx g=rx o=x hello.txt，将文件的权限修改为：rwxr-x–x
+<li>6、chown命令</li>
+</ul>
+<p><img src="D:\my-blog\source/images/linux/chown.jpg" alt="chown"></p>
+<h3 id="四、快捷键"><a href="#四、快捷键" class="headerlink" title="四、快捷键"></a>四、快捷键</h3><ul>
+<li><p>ctrl + d 退出或登出</p>
 <ul>
-<li>u 表示用户权限，g 表示用户组权限，o 表示其他用户权限</li>
+<li>不能用于推出vi&#x2F;vim</li>
 </ul>
 </li>
-</ul>
+<li><p>ctrl + c 强制停止</p>
 </li>
-</ul>
+<li><p>history 历史命令搜索</p>
 </li>
-<li>
-<p>5、权限的数字序号</p>
+<li><p>! 命令前缀，自动执行上次匹配前缀的命令</p>
 </li>
-</ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/permissions-numeric.jpg" alt="权限的数字序号"></p>
-<ul>
-<li>6、chown 命令</li>
-</ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/chown.jpg" alt="chown"></p>
-<h3 id="四-快捷键"><a class="markdownIt-Anchor" href="#四-快捷键">#</a> 四、快捷键</h3>
-<ul>
-<li>
-<p>ctrl + d 退出或登出</p>
-<ul>
-<li>不能用于推出 vi/vim</li>
-</ul>
-</li>
-<li>
-<p>ctrl + c 强制停止</p>
-</li>
-<li>
-<p>history 历史命令搜索</p>
-</li>
-<li>
-<p>! 命令前缀，自动执行上次匹配前缀的命令</p>
-</li>
-<li>
-<p>ctrl + r 输入内容去匹配历史命令</p>
+<li><p>ctrl + r 输入内容去匹配历史命令</p>
 <ul>
 <li>回车可以执行</li>
 <li>键盘左右键可以得到此命令</li>
 </ul>
 </li>
-<li>
-<p>ctrl + a 跳到命令开头</p>
+<li><p>ctrl + a 跳到命令开头</p>
 </li>
-<li>
-<p>ctrl + e 跳到命令结尾</p>
+<li><p>ctrl + e 跳到命令结尾</p>
 </li>
-<li>
-<p>ctrl + 键盘左键 向左跳一个单词</p>
+<li><p>ctrl + 键盘左键 向左跳一个单词</p>
 </li>
-<li>
-<p>ctrl + 键盘右键 向右跳一个单词</p>
+<li><p>ctrl + 键盘右键 向右跳一个单词</p>
 </li>
-<li>
-<p>ctrl + l 清屏 效果与 clear 一致</p>
+<li><p>ctrl + l 清屏 效果与clear一致</p>
 </li>
 </ul>
-<h3 id="五-其他"><a class="markdownIt-Anchor" href="#五-其他">#</a> 五、其他</h3>
-<ul>
-<li>yum 安装</li>
+<h3 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h3><ul>
+<li>yum安装</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/yum-install.jpg" alt="yum安装"></p>
+<p><img src="D:\my-blog\source/images/linux/yum-install.jpg" alt="yum安装"></p>
 <ul>
-<li>apt 安装</li>
+<li>apt安装</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource%5Cimages%5Clinux%5Capt%E5%AE%89%E8%A3%85.jpg" alt="apt安装"></p>
+<p><img src="D:\my-blog\source\images\linux\apt安装.jpg" alt="apt安装"></p>
 <ul>
-<li>systemctl 命令</li>
+<li>systemctl命令</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/systemctl1.jpg" alt="systemctl命令"></p>
+<p><img src="D:\my-blog\source/images/linux/systemctl1.jpg" alt="systemctl命令"></p>
 <ul>
-<li>ln 创建软链接</li>
+<li>ln创建软链接</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/ln.jpg" alt="ln软链接"></p>
+<p><img src="D:\my-blog\source/images/linux/ln.jpg" alt="ln软链接"></p>
 <ul>
-<li>date 命令</li>
+<li>date命令</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/date.jpg" alt="date命令"></p>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/date1.jpg" alt="date命令"></p>
+<p><img src="D:\my-blog\source/images/linux/date.jpg" alt="date命令"></p>
+<p><img src="D:\my-blog\source/images/linux/date1.jpg" alt="date命令"></p>
 <ul>
-<li>修改 LInux 时区</li>
+<li>修改LInux时区</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/change-timezone.jpg" alt="修改LInux时区"></p>
+<p><img src="D:\my-blog\source/images/linux/change-timezone.jpg" alt="修改LInux时区"></p>
 <ul>
-<li>ntp 程序</li>
+<li>ntp程序</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/ntp.jpg" alt="ntp程序"></p>
+<p><img src="D:\my-blog\source/images/linux/ntp.jpg" alt="ntp程序"></p>
 <ul>
-<li>ip 地址</li>
+<li>ip地址</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/ip.jpg" alt="ip地址"></p>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/ip1.jpg" alt="ip地址"></p>
+<p><img src="D:\my-blog\source/images/linux/ip.jpg" alt="ip地址"></p>
+<p><img src="D:\my-blog\source/images/linux/ip1.jpg" alt="ip地址"></p>
 <ul>
 <li>主机名</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/hostname.jpg" alt="主机名"></p>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/hostname1.jpg" alt="主机名"></p>
+<p><img src="D:\my-blog\source/images/linux/hostname.jpg" alt="主机名"></p>
+<p><img src="D:\my-blog\source/images/linux/hostname1.jpg" alt="主机名"></p>
 <ul>
-<li>ping、wget、curl 命令</li>
+<li>ping、wget、curl命令</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/ping.jpg" alt="ping"></p>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/wget.jpg" alt="wget"></p>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/curl.jpg" alt="curl"></p>
+<p><img src="D:\my-blog\source/images/linux/ping.jpg" alt="ping"></p>
+<p><img src="D:\my-blog\source/images/linux/wget.jpg" alt="wget"></p>
+<p><img src="D:\my-blog\source/images/linux/curl.jpg" alt="curl"></p>
 <ul>
 <li>端口</li>
 </ul>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/port.jpg" alt=""></p>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/check-port.jpg" alt=""></p>
-<p><img src="D:%5Cmy-blog%5Csource/images/linux/check-port-usage.jpg" alt=""></p>
-<p>&lt;video src=“D:\my-blog\source\Video\ 电车难题.mp4” controls=“controls” width=&quot;500&quot;height=“300”&gt;</video></p>
+<p><img src="D:\my-blog\source/images/linux/port.jpg"></p>
+<p><img src="D:\my-blog\source/images/linux/check-port.jpg"></p>
+<p><img src="D:\my-blog\source/images/linux/check-port-usage.jpg"></p>
 
   </div>
 
